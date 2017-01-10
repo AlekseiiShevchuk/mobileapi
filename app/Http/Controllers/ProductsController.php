@@ -11,6 +11,11 @@ use Illuminate\Support\Facades\DB;
 class ProductsController extends Controller
 {
 
+
+    const DEFAULT_NEW_PRODUCTS_COUNT = 3;
+
+    const DEFAULT_TOP_SALES_PRODUCTS_COUNT = 3;
+
     public function __construct()
     {
         //$this->middleware('auth:api');
@@ -19,6 +24,7 @@ class ProductsController extends Controller
     public function getAllProducts(Request $request)
     {
         $products = Product::paginate();
+
         return response()->json([
             'products' => $products
         ]);
@@ -28,6 +34,7 @@ class ProductsController extends Controller
     {
         $category = ProductCategory::find($categoryId);
         $products = Product::getProductsByCategory($categoryId)->paginate();
+
         return response()->json([
             'products' => $products,
             'category' => $category
@@ -36,8 +43,9 @@ class ProductsController extends Controller
 
     public function getNewProducts(Request $request)
     {
-        $numberOfProducts = $request->get('number') ? $request->get('number'): 3;
+        $numberOfProducts = $request->get('number') ? $request->get('number'): self::DEFAULT_NEW_PRODUCTS_COUNT;
         $products = Product::getNewProducts($numberOfProducts);
+
         return response()->json([
             'products' => $products
         ]);
@@ -45,8 +53,9 @@ class ProductsController extends Controller
 
     public function getTopSalesProducts(Request $request)
     {
-        $numberOfProducts = $request->get('number') ? $request->get('number'): 3;
+        $numberOfProducts = $request->get('number') ? $request->get('number'): self::DEFAULT_TOP_SALES_PRODUCTS_COUNT;
         $products = Product::getTopSalesProducts($numberOfProducts);
+
         return response()->json([
             'products' => $products
         ]);

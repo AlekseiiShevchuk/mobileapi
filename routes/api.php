@@ -22,3 +22,4 @@ Route::get('/user', function () {
 Route::get('/products', 'ProductsController@getAllProducts');
 Route::get('/category/{categoryId}/products', 'ProductsController@getProductsByCategory')->where('categoryId', '[0-9]+');
 Route::get('/products/new', 'ProductsController@getNewProducts');
+Route::get('/products/top-sales', 'ProductsController@getTopSalesProducts');

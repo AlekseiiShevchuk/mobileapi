@@ -46,6 +46,8 @@ class Product extends Model
                 'clk_1d21ac51df_product_sale.id_product')
             ->select('clk_1d21ac51df_product.*', 'clk_1d21ac51df_product_sale.*')
             ->orderBy('clk_1d21ac51df_product_sale.quantity', 'desc')
-            ->take($numberOfProducts);
+            ->take($numberOfProducts)
+            ->get()
+            ;
     }
 }
