@@ -24,14 +24,10 @@ class ProductsController extends Controller
         ]);
     }
 
-    public function GetProductsByCategory($categoryId)
+    public function getProductsByCategory($categoryId)
     {
         $category = ProductCategory::find($categoryId);
-        $products = DB::table('clk_1d21ac51df_product')
-            ->join('clk_1d21ac51df_category_product', 'clk_1d21ac51df_product.id_product', '=', 'clk_1d21ac51df_category_product.id_product')
-            ->select('clk_1d21ac51df_product.*', 'clk_1d21ac51df_category_product.id_category')
-            ->where('id_category', $categoryId)
-            ->paginate();
+        $products = Product::getProductsByCategory($categoryId)->paginate();
         return response()->json([
             'products' => $products,
             'category' => $category
@@ -40,14 +36,17 @@ class ProductsController extends Controller
 
     public function getNewProducts(Request $request)
     {
-        if (Auth::check()) {
-            return Auth::user();
-        }
         $numberOfProducts = $request->get('number') ? $request->get('number'): 3;
-        $products = DB::table('clk_1d21ac51df_product')
-            ->orderBy('date_add', 'desc')
-            ->take($numberOfProducts)
-            ->get();
+        $products = Product::getNewProducts($numberOfProducts);
+        return response()->json([
+            'products' => $products
+        ]);
+    }
+
+    public function getTopSalesProducts(Request $request)
+    {
+        $numberOfProducts = $request->get('number') ? $request->get('number'): 3;
+        $products = Product::getTopSalesProducts($numberOfProducts);
         return response()->json([
             'products' => $products
         ]);

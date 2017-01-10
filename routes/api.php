@@ -12,11 +12,13 @@
 */
 
 
+use Illuminate\Support\Facades\Auth;
+
 Route::get('/user', function () {
     return Auth::user();
 })->middleware('auth:api');
 
 
 Route::get('/products', 'ProductsController@getAllProducts');
-Route::get('/category/{categoryId}/products', 'ProductsController@getProductsByCategory');
+Route::get('/category/{categoryId}/products', 'ProductsController@getProductsByCategory')->where('categoryId', '[0-9]+');
 Route::get('/products/new', 'ProductsController@getNewProducts');
