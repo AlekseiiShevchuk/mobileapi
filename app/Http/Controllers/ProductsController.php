@@ -20,7 +20,7 @@ class ProductsController extends Controller
 
     public function getAllProducts(Request $request)
     {
-        return Product::with('images', 'descriptions', 'manufacturer')->paginate();
+        return Product::with('images', 'descriptions', 'manufacturer')->paginate(5);
     }
 
     public function getById(Product $product)
@@ -30,7 +30,7 @@ class ProductsController extends Controller
 
     public function getProductsByCategory($categoryId)
     {
-        return Product::getProductsByCategory($categoryId)->paginate();
+        return Product::getProductsByCategory($categoryId)->paginate(5);
     }
 
     public function getNewProducts(Request $request)
