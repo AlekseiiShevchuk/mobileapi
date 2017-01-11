@@ -10,17 +10,33 @@ class Product extends Model
     protected $table = 'clk_1d21ac51df_product';
     protected $primaryKey = 'id_product';
 
+    public function images()
+    {
+        return $this->hasMany('App\ProductImage', 'id_product');
+    }
+
+    public function descriptions()
+    {
+        return $this->hasMany('App\ProductLangDescription', 'id_product');
+    }
+
+    public function manufacturer()
+    {
+        return $this->hasOne('App\ProductManufacturer', 'id_manufacturer');
+    }
+
     /**
      * @param $categoryId
      * @return mixed
      */
     public static function getProductsByCategory($categoryId)
     {
-        return DB::table('clk_1d21ac51df_product')
-            ->join('clk_1d21ac51df_category_product', 'clk_1d21ac51df_product.id_product', '=',
-                'clk_1d21ac51df_category_product.id_product')
-            ->select('clk_1d21ac51df_product.*', 'clk_1d21ac51df_category_product.id_category')
-            ->where('id_category', $categoryId);
+        $productIdsArray = DB::table('clk_1d21ac51df_product')->join('clk_1d21ac51df_category_product',
+            'clk_1d21ac51df_product.id_product', '=',
+            'clk_1d21ac51df_category_product.id_product')->select('clk_1d21ac51df_product.*',
+            'clk_1d21ac51df_category_product.id_category')->where('id_category',
+            $categoryId)->pluck('clk_1d21ac51df_product.id_product')->toArray();
+        return Product::whereIn('id_product', $productIdsArray)->with('images', 'descriptions', 'manufacturer');
     }
 
     /**
@@ -47,7 +63,6 @@ class Product extends Model
             ->select('clk_1d21ac51df_product.*', 'clk_1d21ac51df_product_sale.*')
             ->orderBy('clk_1d21ac51df_product_sale.quantity', 'desc')
             ->take($numberOfProducts)
-            ->get()
-            ;
+            ->get();
     }
 }

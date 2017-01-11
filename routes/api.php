@@ -20,6 +20,13 @@ Route::get('/user', function () {
 
 
 Route::get('/products', 'ProductsController@getAllProducts');
-Route::get('/category/{categoryId}/products', 'ProductsController@getProductsByCategory')->where('categoryId', '[0-9]+');
+Route::get('/products/{product}', 'ProductsController@getById')->where('product', '[0-9]+');
+Route::get('/categories/{categoryId}/products', 'ProductsController@getProductsByCategory')->where('categoryId', '[0-9]+');
 Route::get('/products/new', 'ProductsController@getNewProducts');
 Route::get('/products/top-sales', 'ProductsController@getTopSalesProducts');
+
+Route::get('categories', 'ProductCategoryController@index');
+Route::get('categories/{id}', 'ProductCategoryController@show')->where('id', '[0-9]+');
+
+Route::post('/user/register','UserController@register');
+Route::put('/user','UserController@update')->middleware('auth:api');
