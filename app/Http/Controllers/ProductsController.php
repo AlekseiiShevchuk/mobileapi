@@ -3,10 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Product;
-use App\ProductCategory;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 
 class ProductsController extends Controller
 {
@@ -23,27 +20,22 @@ class ProductsController extends Controller
 
     public function getAllProducts(Request $request)
     {
-        $products = Product::paginate();
+        return Product::with('images', 'descriptions', 'manufacturer')->paginate();
+    }
 
-        return response()->json([
-            'products' => $products
-        ]);
+    public function getById(Product $product)
+    {
+        return $product->load('images', 'descriptions', 'manufacturer');
     }
 
     public function getProductsByCategory($categoryId)
     {
-        $category = ProductCategory::find($categoryId);
-        $products = Product::getProductsByCategory($categoryId)->paginate();
-
-        return response()->json([
-            'products' => $products,
-            'category' => $category
-        ]);
+        return Product::getProductsByCategory($categoryId)->paginate();
     }
 
     public function getNewProducts(Request $request)
     {
-        $numberOfProducts = $request->get('number') ? $request->get('number'): self::DEFAULT_NEW_PRODUCTS_COUNT;
+        $numberOfProducts = $request->get('number') ? $request->get('number') : self::DEFAULT_NEW_PRODUCTS_COUNT;
         $products = Product::getNewProducts($numberOfProducts);
 
         return response()->json([
@@ -53,7 +45,7 @@ class ProductsController extends Controller
 
     public function getTopSalesProducts(Request $request)
     {
-        $numberOfProducts = $request->get('number') ? $request->get('number'): self::DEFAULT_TOP_SALES_PRODUCTS_COUNT;
+        $numberOfProducts = $request->get('number') ? $request->get('number') : self::DEFAULT_TOP_SALES_PRODUCTS_COUNT;
         $products = Product::getTopSalesProducts($numberOfProducts);
 
         return response()->json([

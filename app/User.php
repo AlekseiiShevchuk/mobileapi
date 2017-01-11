@@ -13,6 +13,7 @@ class User extends Authenticatable
 
     protected $table = 'clk_1d21ac51df_customer';
     protected $primaryKey = 'id_customer';
+    public $timestamps = false;
 
     /**
      * The attributes that are mass assignable.
@@ -20,15 +21,20 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'company',
-        'siret',
-        'ape',
+        'id_gender',
         'firstname',
         'lastname',
         'email',
         'passwd',
         'birthday',
+        'newsletter',
+        'siret',
+        'ape',
         'website',
+        'company',
+        'id_lang',
+        'date_add',
+        'date_upd',
     ];
 
     /**
