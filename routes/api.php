@@ -30,3 +30,9 @@ Route::get('categories/{id}', 'ProductCategoryController@show')->where('id', '[0
 
 Route::post('/user/register','UserController@register');
 Route::put('/user','UserController@update')->middleware('auth:api');
+
+Route::get('/addresses/get-countries', 'AddressController@getCountriesList');
+Route::get('/addresses', 'AddressController@getAuthUserAddresses')->middleware('auth:api');
+Route::post('/addresses', 'AddressController@store')->middleware('auth:api');
+Route::put('/addresses/{address}', 'AddressController@update')->middleware('auth:api');
+Route::delete('/addresses/{address}', 'AddressController@destroy')->middleware('auth:api');

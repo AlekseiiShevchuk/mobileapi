@@ -30,7 +30,8 @@ class UserController extends Controller
             'date_upd' => new \DateTime('now'),
             'passwd' => md5(User::_COOKIE_KEY_.$request['passwd']),
         ]);
-        return response($user, 201);
+        $freshUserFromDb = User::find($user->id_customer);
+        return response($freshUserFromDb, 201);
 
     }
 
@@ -42,13 +43,15 @@ class UserController extends Controller
      */
     public function update(UserUpdateRequest $request)
     {
+        /* @var User $user */
         $user = Auth::user();
         $user->update($request->all());
         $user->date_upd = new \DateTime('now');
         if(!empty($request['passwd'])){
             $user->passwd = md5(User::_COOKIE_KEY_.$request['passwd']);
         }
-
-        return $user;
+        $user->save();
+        $freshUserFromDb = User::find($user->id_customer);
+        return $freshUserFromDb;
     }
 }
