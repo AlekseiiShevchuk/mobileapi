@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 
 class ProductsController extends Controller
 {
-
-
     const DEFAULT_NEW_PRODUCTS_COUNT = 3;
 
     const DEFAULT_TOP_SALES_PRODUCTS_COUNT = 3;
+
+    const DEFAULT_PAGINATION_LIMIT = 5;
 
     public function __construct()
     {
@@ -20,7 +20,18 @@ class ProductsController extends Controller
 
     public function getAllProducts(Request $request)
     {
-        return Product::with('images', 'descriptions', 'manufacturer')->paginate(5);
+        $limit = $request->get('limit') ? $request->get('limit') : self::DEFAULT_PAGINATION_LIMIT;
+
+        $search =[];
+        if($request->get('name')){
+            $search['name'] = $request->get('name');
+        }
+        if($request->get('description')){
+            $search['description'] = $request->get('description');
+        }
+
+        return Product::search($search,$limit);
+
     }
 
     public function getById(Product $product)

@@ -9,6 +9,7 @@ class Product extends Model
 {
     protected $table = 'clk_1d21ac51df_product';
     protected $primaryKey = 'id_product';
+    const DEFAULT_LANGUAGES = 2;
 
     public function images()
     {
@@ -23,6 +24,27 @@ class Product extends Model
     public function manufacturer()
     {
         return $this->hasOne('App\ProductManufacturer', 'id_manufacturer');
+    }
+
+    /**
+     * Scope a query.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @param array $search
+     * @param int $pagination
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+
+    public function scopeSearch($query, $search = [], $pagination)
+    {
+        return $query->whereHas('descriptions', function ($query) use ($search) {
+            $query->where('id_lang', '=', self::DEFAULT_LANGUAGES);
+            foreach ($search as $key => $value) {
+                $query->where($key, 'LIKE', '%' . $value . '%');
+            }
+        })
+            ->with(['images', 'descriptions', 'manufacturer'])
+            ->paginate($pagination);
     }
 
     /**
