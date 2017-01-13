@@ -2,9 +2,7 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-
-class ProductImage extends Model
+class ProductImage extends \Eloquent
 {
     protected $primaryKey = 'id_image';
     protected $table = 'clk_1d21ac51df_image';

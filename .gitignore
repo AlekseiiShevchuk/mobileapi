@@ -6,5 +6,6 @@ Homestead.json
 Homestead.yaml
 .env
 /bootstrap/cache/
-/_ide_helper.php
 /.phpstorm.meta.php
+/storage/oauth-private.key
+/storage/oauth-public.key

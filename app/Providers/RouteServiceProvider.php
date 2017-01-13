@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 class RouteServiceProvider extends ServiceProvider
@@ -51,7 +50,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapWebRoutes()
     {
-        Route::group([
+        \Route::group([
             'middleware' => 'web',
             'namespace' => $this->namespace,
         ], function ($router) {
@@ -68,7 +67,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes()
     {
-        Route::group([
+        \Route::group([
             'middleware' => 'api',
             'namespace' => $this->namespace,
             'prefix' => 'api',

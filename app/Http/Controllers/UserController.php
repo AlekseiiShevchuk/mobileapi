@@ -29,6 +29,7 @@ class UserController extends Controller
             'date_add' => new \DateTime('now'),
             'date_upd' => new \DateTime('now'),
             'passwd' => md5(User::_COOKIE_KEY_.$request['passwd']),
+            'secure_key'=> md5(uniqid(rand(), true))
         ]);
         $freshUserFromDb = User::find($user->id_customer);
         return response($freshUserFromDb, 201);
