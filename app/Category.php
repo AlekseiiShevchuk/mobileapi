@@ -2,7 +2,7 @@
 
 namespace App;
 
-class ProductCategory extends \Eloquent
+class Category extends \Eloquent
 {
     protected $table = 'clk_1d21ac51df_category';
     protected $primaryKey = 'id_category';

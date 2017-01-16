@@ -23,6 +23,11 @@ class Product extends \Eloquent
         return $this->hasOne('App\ProductManufacturer', 'id_manufacturer');
     }
 
+    public function sale()
+    {
+        return $this->hasOne('App\ProductSale', 'id_product');
+    }
+
     /**
      * Scope a query.
      *
@@ -45,43 +50,54 @@ class Product extends \Eloquent
     }
 
     /**
-     * @param $categoryId
-     * @return mixed
+     * Scope a query.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @param int $categoryId
+     * @param int $pagination
+     * @return \Illuminate\Database\Eloquent\Builder
      */
-    public static function getProductsByCategory($categoryId)
+    public static function scopeByCategory($query, $categoryId, $pagination)
     {
-        $productIdsArray = \DB::table('clk_1d21ac51df_product')->join('clk_1d21ac51df_category_product',
-            'clk_1d21ac51df_product.id_product', '=',
-            'clk_1d21ac51df_category_product.id_product')->select('clk_1d21ac51df_product.*',
-            'clk_1d21ac51df_category_product.id_category')->where('id_category',
-            $categoryId)->pluck('clk_1d21ac51df_product.id_product')->toArray();
-        return Product::whereIn('id_product', $productIdsArray)->with('images', 'descriptions', 'manufacturer');
+        return $query->where('id_category_default', '=', $categoryId)
+            ->with('images', 'descriptions', 'manufacturer')
+            ->paginate($pagination);
     }
 
     /**
-     * @param $numberOfProducts
-     * @return mixed
+     * Scope a query.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @param int $pagination
+     * @return \Illuminate\Database\Eloquent\Builder
      */
-    public static function getNewProducts($numberOfProducts)
+    public static function scopeNew($query, $pagination)
     {
-        return \DB::table('clk_1d21ac51df_product')
+        return $query
             ->orderBy('date_add', 'desc')
-            ->take($numberOfProducts)
-            ->get();
+            ->with('images', 'descriptions', 'manufacturer')
+            ->paginate($pagination);
     }
 
     /**
-     * @param $numberOfProducts
-     * @return mixed
+     * Scope a query.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @param int $pagination
+     * @return \Illuminate\Database\Eloquent\Builder
      */
-    public static function getTopSalesProducts($numberOfProducts)
+    public function scopeTopSales($query, $pagination)
     {
-        return \DB::table('clk_1d21ac51df_product')
-            ->join('clk_1d21ac51df_product_sale', 'clk_1d21ac51df_product.id_product', '=',
-                'clk_1d21ac51df_product_sale.id_product')
-            ->select('clk_1d21ac51df_product.*', 'clk_1d21ac51df_product_sale.*')
-            ->orderBy('clk_1d21ac51df_product_sale.quantity', 'desc')
-            ->take($numberOfProducts)
-            ->get();
+        $relation = $this->sale();
+        $related = $relation->getRelated();
+        $table = $related->getTable();
+        $foreignKey = $relation->getForeignKey();
+
+        $query->join($table, $foreignKey, '=', $this->getQualifiedKeyName())
+            ->orderBy($table . '.' . 'quantity', 'DESC');
+
+        return $query
+            ->with('images', 'descriptions', 'manufacturer')
+            ->paginate($pagination);
     }
 }
