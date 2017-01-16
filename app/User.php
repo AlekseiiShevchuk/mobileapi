@@ -26,6 +26,7 @@ class User extends Authenticatable
         'lastname',
         'email',
         'passwd',
+        'secure_key',
         'birthday',
         'newsletter',
         'siret',

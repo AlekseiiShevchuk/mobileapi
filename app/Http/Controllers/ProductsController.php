@@ -22,15 +22,15 @@ class ProductsController extends Controller
     {
         $limit = $request->get('limit') ? $request->get('limit') : self::DEFAULT_PAGINATION_LIMIT;
 
-        $search =[];
-        if($request->get('name')){
+        $search = [];
+        if ($request->get('name')) {
             $search['name'] = $request->get('name');
         }
-        if($request->get('description')){
+        if ($request->get('description')) {
             $search['description'] = $request->get('description');
         }
 
-        return Product::search($search,$limit);
+        return Product::search($search, $limit);
 
     }
 
@@ -39,28 +39,24 @@ class ProductsController extends Controller
         return $product->load('images', 'descriptions', 'manufacturer');
     }
 
-    public function getProductsByCategory($categoryId)
+    public function getProductsByCategory(Request $request, $categoryId)
     {
-        return Product::getProductsByCategory($categoryId)->paginate(5);
+        $limit = $request->get('limit') ? $request->get('limit') : self::DEFAULT_PAGINATION_LIMIT;
+
+        return Product::byCategory($categoryId, $limit);
     }
 
     public function getNewProducts(Request $request)
     {
-        $numberOfProducts = $request->get('number') ? $request->get('number') : self::DEFAULT_NEW_PRODUCTS_COUNT;
-        $products = Product::getNewProducts($numberOfProducts);
+        $limit = $request->get('limit') ? $request->get('limit') : self::DEFAULT_NEW_PRODUCTS_COUNT;
 
-        return response()->json([
-            'products' => $products
-        ]);
+        return Product::new($limit);
     }
 
     public function getTopSalesProducts(Request $request)
     {
-        $numberOfProducts = $request->get('number') ? $request->get('number') : self::DEFAULT_TOP_SALES_PRODUCTS_COUNT;
-        $products = Product::getTopSalesProducts($numberOfProducts);
+        $limit = $request->get('limit') ? $request->get('limit') : self::DEFAULT_TOP_SALES_PRODUCTS_COUNT;
 
-        return response()->json([
-            'products' => $products
-        ]);
+        return  Product::TopSales($limit);
     }
 }

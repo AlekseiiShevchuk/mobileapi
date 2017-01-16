@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\ProductCategory;
-use Illuminate\Http\Request;
+use App\Category;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-class ProductCategoryController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +14,7 @@ class ProductCategoryController extends Controller
      */
     public function index()
     {
-        return ProductCategory::getAllCategories();
+        return Category::getAllCategories();
     }
 
     /**
@@ -26,7 +25,7 @@ class ProductCategoryController extends Controller
      */
     public function show($id)
     {
-        $category = ProductCategory::getCategoryById($id);
+        $category = Category::getCategoryById($id);
         if(!$category){
             throw new NotFoundHttpException();
         }

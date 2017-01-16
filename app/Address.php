@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
-class Address extends Model
+class Address extends \Eloquent
 {
     protected $primaryKey = 'id_address';
     protected $table = 'clk_1d21ac51df_address';
@@ -31,12 +31,12 @@ class Address extends Model
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
-        $this->id_customer = Auth::user()->id_customer;
+        $this->id_customer = \Auth::user()->id_customer;
     }
 
     public static function getCountriesList()
     {
-        return DB::table('clk_1d21ac51df_country_lang')->where('id_lang', '=', 2)->get(['name', 'id_country']);
+        return \DB::table('clk_1d21ac51df_country_lang')->where('id_lang', '=', 2)->get(['name', 'id_country']);
     }
 
     public static function getAuthUserAddresses()

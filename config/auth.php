@@ -45,6 +45,10 @@ return [
             'driver' => 'passport',
             'provider' => 'users',
         ],
+//        'guest' => [
+//            'driver' => 'passport',
+//            'provider' => 'guest',
+//        ],
     ],
 
     /*
@@ -70,10 +74,10 @@ return [
             'model' => App\User::class,
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+//        'guest' => [
+//            'driver' => 'eloquent',
+//            'model' => App\Guest::class,
+//        ],
     ],
 
     /*

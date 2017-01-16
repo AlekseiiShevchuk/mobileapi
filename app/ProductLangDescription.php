@@ -2,9 +2,7 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-
-class ProductLangDescription extends Model
+class ProductLangDescription extends \Eloquent
 {
     protected $table = 'clk_1d21ac51df_product_lang';
 }
