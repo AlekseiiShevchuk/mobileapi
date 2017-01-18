@@ -20,8 +20,8 @@ Route::get('/products/new', 'ProductsController@getNewProducts');
 Route::get('/products/top-sales', 'ProductsController@getTopSalesProducts');
 
 ////////// Category
-Route::get('categories', 'CategoryController@index');
-Route::get('categories/{id}', 'CategoryController@show')->where('id', '[0-9]+');
+Route::get('categories', 'CategoryController@home');
+Route::get('categories/{category}', 'CategoryController@getById')->where('category', '[0-9]+');
 
 ////////// User
 Route::get('/user', function () {
@@ -38,4 +38,5 @@ Route::put('/addresses/{address}', 'AddressController@update')->middleware('auth
 Route::delete('/addresses/{address}', 'AddressController@destroy')->middleware('auth:api');
 
 ////// Test
-//Route::get('/test','TestController@test');
+//Route::get('/test/user','TestController@test');
+//Route::get('/test/conf','TestController@conf');
