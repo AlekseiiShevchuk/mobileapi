@@ -8,24 +8,37 @@ class Product extends \Eloquent
     protected $primaryKey = 'id_product';
     const DEFAULT_LANGUAGES = 2;
 
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+
+        $this->with = ['images', 'descriptions' => function ($query) {
+            $query->where('id_lang', '=', Configuration::getValue('PS_LANG_DEFAULT'));
+        }, 'manufacturer'];
+    }
+
     public function images()
     {
-        return $this->hasMany('App\ProductImage', 'id_product');
+        return $this->hasMany(ProductImage::class, 'id_product');
+    }
+    public function categories()
+    {
+        return $this->hasMany(ProductCategory::class, 'id_product');
     }
 
     public function descriptions()
     {
-        return $this->hasMany('App\ProductLangDescription', 'id_product');
+        return $this->hasMany(ProductLangDescription::class, 'id_product');
     }
 
     public function manufacturer()
     {
-        return $this->hasOne('App\ProductManufacturer', 'id_manufacturer');
+        return $this->hasOne(ProductManufacturer::class, 'id_manufacturer');
     }
 
     public function sale()
     {
-        return $this->hasOne('App\ProductSale', 'id_product');
+        return $this->hasOne(ProductSale::class, 'id_product');
     }
 
     /**
@@ -40,12 +53,11 @@ class Product extends \Eloquent
     public function scopeSearch($query, $search = [], $pagination)
     {
         return $query->whereHas('descriptions', function ($query) use ($search) {
-            $query->where('id_lang', '=', self::DEFAULT_LANGUAGES);
+            $query->where('id_lang', '=', Configuration::getValue('PS_LANG_DEFAULT'));
             foreach ($search as $key => $value) {
                 $query->where($key, 'LIKE', '%' . $value . '%');
             }
         })
-            ->with(['images', 'descriptions', 'manufacturer'])
             ->paginate($pagination);
     }
 
@@ -59,8 +71,9 @@ class Product extends \Eloquent
      */
     public static function scopeByCategory($query, $categoryId, $pagination)
     {
-        return $query->where('id_category_default', '=', $categoryId)
-            ->with('images', 'descriptions', 'manufacturer')
+        return $query->whereHas('categories', function ($query) use ($categoryId) {
+            $query->where('id_category', '=', $categoryId);
+        })
             ->paginate($pagination);
     }
 
@@ -75,7 +88,6 @@ class Product extends \Eloquent
     {
         return $query
             ->orderBy('date_add', 'desc')
-            ->with('images', 'descriptions', 'manufacturer')
             ->paginate($pagination);
     }
 
@@ -97,7 +109,6 @@ class Product extends \Eloquent
             ->orderBy($table . '.' . 'quantity', 'DESC');
 
         return $query
-            ->with('images', 'descriptions', 'manufacturer')
             ->paginate($pagination);
     }
 }

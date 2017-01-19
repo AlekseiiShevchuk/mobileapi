@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Category;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
@@ -12,23 +12,25 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function home()
     {
-        return Category::getAllCategories();
+        return ['data'=>Category::home()];
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    public function getById(Request $request,Category $category)
     {
-        $category = Category::getCategoryById($id);
-        if(!$category){
-            throw new NotFoundHttpException();
+        $dept = $request->get('dept') ? $request->get('dept') : 0;
+
+        if($dept > 0) {
+            $data = $category->load(['children' => function ($query) use ($dept) {
+                Category::getSub($query, $dept - 1);
+                $query->where('active', '=', 1);
+            }]);
+        }else{
+            $data = $category;
         }
-        return response()->json($category);
+        return $data;
+
+
     }
 }
