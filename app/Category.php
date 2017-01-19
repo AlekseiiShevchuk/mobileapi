@@ -28,7 +28,8 @@ class Category extends \Eloquent
     }
 
     public function getHasChildrenAttribute(){
-        return !empty($this->children);
+        $children = $this->children->all();
+        return !empty($children);
     }
     /**
      * Scope a query.
