@@ -6,13 +6,25 @@ class Category extends \Eloquent
 {
     protected $table = 'clk_1d21ac51df_category';
     protected $primaryKey = 'id_category';
-    protected $appends = ['has_children'];
+    protected $appends = [
+        'has_children',
+        'count_products'
+    ];
+    protected $hidden = [
+        'products',
+        'active',
+        'id_parent',
+        'id_shop_default',
+        'date_add',
+        'date_upd',
+        'is_root_category'
+    ];
 
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
 
-        $this->with = [ 'descriptions' => function ($query) {
+        $this->with = ['descriptions' => function ($query) {
             $query->where('id_lang', '=', Configuration::getValue('PS_LANG_DEFAULT'));
         }];
     }
@@ -27,10 +39,21 @@ class Category extends \Eloquent
         return $this->hasMany(Category::class, 'id_parent');
     }
 
-    public function getHasChildrenAttribute(){
-        $children = $this->children->all();
-        return !empty($children);
+    public function products()
+    {
+        return $this->hasMany(ProductCategory::class, 'id_category');
     }
+
+    public function getHasChildrenAttribute()
+    {
+        return $this->children->isNotEmpty();
+    }
+
+    public function getCountProductsAttribute()
+    {
+        return $this->products->count();
+    }
+
     /**
      * Scope a query.
      *
@@ -44,7 +67,7 @@ class Category extends \Eloquent
             $query->with(['children' => function ($query) use ($dept) {
                 self::getSub($query, $dept - 1);
                 $query->where('active', '=', 1);
-            }]) :$query;
+            }]) : $query;
     }
 
     /**
