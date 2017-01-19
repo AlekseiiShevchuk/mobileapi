@@ -14,7 +14,7 @@ class CategoryController extends Controller
      */
     public function home()
     {
-        return Category::home();
+        return ['data'=>Category::home()];
     }
 
     public function getById(Request $request,Category $category)

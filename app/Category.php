@@ -6,6 +6,7 @@ class Category extends \Eloquent
 {
     protected $table = 'clk_1d21ac51df_category';
     protected $primaryKey = 'id_category';
+    protected $appends = ['has_children'];
 
     public function __construct(array $attributes = [])
     {
@@ -24,6 +25,10 @@ class Category extends \Eloquent
     public function children()
     {
         return $this->hasMany(Category::class, 'id_parent');
+    }
+
+    public function getHasChildrenAttribute(){
+        return !empty($this->children);
     }
     /**
      * Scope a query.
