@@ -1,26 +1,38 @@
 <?php
 
-namespace App;
+namespace App\Model;
+
+use App\Model\Product\ProductCategory;
+use App\Model\Product\ProductLangDescription;
+use App\Model\Product\ProductSale;
 
 class Product extends \Eloquent
 {
     protected $table = 'clk_1d21ac51df_product';
     protected $primaryKey = 'id_product';
-    const DEFAULT_LANGUAGES = 2;
+
+    protected $hidden = [
+        'date_add',
+        'date_upd',
+    ];
 
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
 
-        $this->with = ['images', 'descriptions' => function ($query) {
-            $query->where('id_lang', '=', Configuration::getValue('PS_LANG_DEFAULT'));
-        }, 'manufacturer'];
+        $this->with = ['images',
+            'descriptions' => function ($query) {
+                $query->where('id_lang', '=', Configuration::getValue('PS_LANG_DEFAULT'));
+            },
+            'manufacturer',
+        'sale'];
     }
 
     public function images()
     {
-        return $this->hasMany(ProductImage::class, 'id_product');
+        return $this->hasMany(Image::class, 'id_product');
     }
+
     public function categories()
     {
         return $this->hasMany(ProductCategory::class, 'id_product');
@@ -33,7 +45,7 @@ class Product extends \Eloquent
 
     public function manufacturer()
     {
-        return $this->hasOne(ProductManufacturer::class, 'id_manufacturer');
+        return $this->hasOne(Manufacturer::class, 'id_manufacturer');
     }
 
     public function sale()

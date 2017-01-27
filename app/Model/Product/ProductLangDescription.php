@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Model\Product;
 
 class ProductLangDescription extends \Eloquent
 {

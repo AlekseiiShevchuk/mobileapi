@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Address;
+use App\Model\Address;
 use App\Http\Requests\AddressDeleteRequest;
 use App\Http\Requests\AddressStoreRequest;
 use App\Http\Requests\AddressUpdateRequest;

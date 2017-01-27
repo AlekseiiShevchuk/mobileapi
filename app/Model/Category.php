@@ -1,6 +1,9 @@
 <?php
 
-namespace App;
+namespace App\Model;
+
+use App\Model\Category\CategoryLang;
+use App\Model\Product\ProductCategory;
 
 class Category extends \Eloquent
 {
@@ -36,7 +39,7 @@ class Category extends \Eloquent
 
     public function children()
     {
-        return $this->hasMany(Category::class, 'id_parent');
+        return $this->hasMany(self::class, 'id_parent');
     }
 
     public function products()
@@ -61,7 +64,8 @@ class Category extends \Eloquent
      * @param int $dept
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public static function getSub($query, $dept)
+    public
+    static function getSub($query, $dept)
     {
         return $dept > 0 ?
             $query->with(['children' => function ($query) use ($dept) {
@@ -77,7 +81,8 @@ class Category extends \Eloquent
      * @param int $dept
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public static function scopeHome($query, $dept = 0)
+    public
+    static function scopeHome($query, $dept = 0)
     {
         return self::getSub($query, $dept)
             ->where('id_parent', '=', Configuration::getValue('PS_HOME_CATEGORY'))
