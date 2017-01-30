@@ -2,9 +2,13 @@
 
 namespace App\Model;
 
+use App\Model\Currency\CurrencyShop;
+use App\Model\Product\ProductAttribute;
 use App\Model\Product\ProductCategory;
 use App\Model\Product\ProductLangDescription;
 use App\Model\Product\ProductSale;
+use App\Model\Product\ProductSpecificPrice;
+use Illuminate\Database\Query\Builder;
 
 class Product extends \Eloquent
 {
@@ -14,6 +18,11 @@ class Product extends \Eloquent
     protected $hidden = [
         'date_add',
         'date_upd',
+        'attribute'
+    ];
+
+    protected $appends = [
+        'has_attribute',
     ];
 
     public function __construct(array $attributes = [])
@@ -25,7 +34,12 @@ class Product extends \Eloquent
                 $query->where('id_lang', '=', Configuration::getValue('PS_LANG_DEFAULT'));
             },
             'manufacturer',
-        'sale'];
+            'sale',
+            'currency' => function($query){
+                $query->where('active','=',1);
+            },
+            'specific_price'
+        ];
     }
 
     public function images()
@@ -53,6 +67,23 @@ class Product extends \Eloquent
         return $this->hasOne(ProductSale::class, 'id_product');
     }
 
+    public function currency()
+    {
+        return $this->hasManyThrough(Currency::class, CurrencyShop::class, 'id_shop', 'id_currency', 'id_shop_default');
+    }
+
+    public function specific_price(){
+        return $this->hasMany(ProductSpecificPrice::class,'id_product');
+    }
+
+    public function attribute(){
+        return $this->hasMany(ProductAttribute::class,'id_product');
+    }
+
+    public function getHasAttributeAttribute()
+    {
+        return $this->attribute->isNotEmpty();
+    }
     /**
      * Scope a query.
      *
@@ -121,6 +152,18 @@ class Product extends \Eloquent
             ->orderBy($table . '.' . 'quantity', 'DESC');
 
         return $query
+            ->paginate($pagination);
+    }
+    /**
+     * Scope a query.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @param int $pagination
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public static function scopeSpecialOffers($query, $pagination)
+    {
+        return $query->whereHas('specific_price')
             ->paginate($pagination);
     }
 }

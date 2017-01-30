@@ -9,5 +9,6 @@ class Manufacturer extends \Eloquent
     protected $hidden = [
         'date_add',
         'date_upd',
+        'active'
     ];
 }

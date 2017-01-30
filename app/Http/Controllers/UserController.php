@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Guest;
 use App\Http\Requests\UserRegisterRequest;
 use App\Http\Requests\UserUpdateRequest;
-use App\Models\User;
-use Illuminate\Http\Request;
+use App\Model\User;
 use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
@@ -33,8 +31,8 @@ class UserController extends Controller
             'secure_key' => md5(uniqid(rand(), true))
         ]);
         $freshUserFromDb = User::find($user->id_customer);
-        return response($freshUserFromDb, 201);
 
+        return response($freshUserFromDb, 201);
     }
 
     /**
@@ -54,16 +52,8 @@ class UserController extends Controller
         }
         $user->save();
         $freshUserFromDb = User::find($user->id_customer);
+
         return $freshUserFromDb;
     }
 
-
-    public function guest(Request $request)
-    {
-        $guest = Guest::create();
-
-        $guest->save();
-
-        return $guest->createToken('guest');
-    }
 }

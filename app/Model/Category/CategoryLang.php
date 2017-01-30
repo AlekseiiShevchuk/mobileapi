@@ -12,8 +12,8 @@ class CategoryLang extends \Eloquent
 
     public function getImageAttribute()
     {
-        return url('/c/' . $this->id_category . '-tm_category_default/' .
-            $this->link_rewrite . '.jpg');
+        return $_SERVER['SERVER_NAME'].'/c/' . $this->id_category . '-tm_category_default/' .
+            $this->link_rewrite . '.jpg';
     }
 
 }

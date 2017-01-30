@@ -59,4 +59,11 @@ class ProductsController extends Controller
 
         return  Product::TopSales($limit);
     }
+
+    public function getSpecialOffers(Request $request)
+    {
+        $limit = $request->get('limit') ? $request->get('limit') : self::DEFAULT_TOP_SALES_PRODUCTS_COUNT;
+
+        return  Product::specialOffers($limit);
+    }
 }

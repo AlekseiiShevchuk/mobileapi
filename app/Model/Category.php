@@ -64,8 +64,7 @@ class Category extends \Eloquent
      * @param int $dept
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public
-    static function getSub($query, $dept)
+    public static function getSub($query, $dept)
     {
         return $dept > 0 ?
             $query->with(['children' => function ($query) use ($dept) {
@@ -81,8 +80,7 @@ class Category extends \Eloquent
      * @param int $dept
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public
-    static function scopeHome($query, $dept = 0)
+    public static function scopeHome($query, $dept = 0)
     {
         return self::getSub($query, $dept)
             ->where('id_parent', '=', Configuration::getValue('PS_HOME_CATEGORY'))
