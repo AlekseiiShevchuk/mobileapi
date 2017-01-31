@@ -9,3 +9,4 @@ Homestead.yaml
 /.phpstorm.meta.php
 /storage/oauth-private.key
 /storage/oauth-public.key
+/.env

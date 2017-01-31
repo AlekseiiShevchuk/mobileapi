@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Product;
+use App\Model\Product;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -36,7 +36,7 @@ class ProductsController extends Controller
 
     public function getById(Product $product)
     {
-        return $product->load('images', 'descriptions', 'manufacturer');
+        return $product;
     }
 
     public function getProductsByCategory(Request $request, $categoryId)
@@ -58,5 +58,12 @@ class ProductsController extends Controller
         $limit = $request->get('limit') ? $request->get('limit') : self::DEFAULT_TOP_SALES_PRODUCTS_COUNT;
 
         return  Product::TopSales($limit);
+    }
+
+    public function getSpecialOffers(Request $request)
+    {
+        $limit = $request->get('limit') ? $request->get('limit') : self::DEFAULT_TOP_SALES_PRODUCTS_COUNT;
+
+        return  Product::specialOffers($limit);
     }
 }

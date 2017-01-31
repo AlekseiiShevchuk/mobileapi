@@ -1,6 +1,9 @@
 <?php
 
-namespace App;
+namespace App\Model;
+
+use App\Model\Category\CategoryLang;
+use App\Model\Product\ProductCategory;
 
 class Category extends \Eloquent
 {
@@ -36,7 +39,7 @@ class Category extends \Eloquent
 
     public function children()
     {
-        return $this->hasMany(Category::class, 'id_parent');
+        return $this->hasMany(self::class, 'id_parent');
     }
 
     public function products()
