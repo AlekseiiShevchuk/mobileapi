@@ -2,7 +2,8 @@
 
 namespace App\Model;
 
-use Illuminate\Support\Facades\Auth;
+use App\Model\Address\AddressCountry;
+use App\Model\Address\AddressState;
 
 class Address extends \Eloquent
 {
@@ -12,7 +13,6 @@ class Address extends \Eloquent
     const UPDATED_AT = 'date_upd';
 
     protected $fillable = [
-        'id_country',
         'alias',
         'company',
         'lastname',
@@ -25,20 +25,47 @@ class Address extends \Eloquent
         'phone',
         'phone_mobile',
     ];
-    
+
+    protected $with = [
+        'country',
+        'state'
+    ];
+
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
-        $this->id_customer = \Auth::user()->id_customer;
+        $this->id_state = 0;
     }
 
-    public static function getCountriesList()
+    public function customer()
     {
-        return \DB::table('clk_1d21ac51df_country_lang')->where('id_lang', '=', 2)->get(['name', 'id_country']);
+        return $this->belongsTo(User::class, 'id_customer');
     }
 
-    public static function getAuthUserAddresses()
+    public function country()
     {
-        return Address::where('id_customer', '=', Auth::user()->id_customer)->where('id_country','>',0)->get();
+        return $this->belongsTo(AddressCountry::class, 'id_country');
     }
+
+    public function state()
+    {
+        return $this->belongsTo(AddressState::class, 'id_state');
+    }
+
+    /**
+     * Scope a query.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @param int $id_customer
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeGetUserAddresses($query, $id_customer)
+    {
+        return $query
+            ->where('id_customer', '=', $id_customer)
+            ->where('deleted', '=', 0)
+            ->where('active', '=', 1)
+            ->get();
+    }
+
 }

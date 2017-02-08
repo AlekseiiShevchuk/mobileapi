@@ -5,11 +5,15 @@ namespace App\Http\Controllers;
 use App\Model\Category;
 use Illuminate\Http\Request;
 
+/**
+ * Class CategoryController
+ * @package App\Http\Controllers
+ * @resource Category
+ */
 class CategoryController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
+     * Root Menu Category
      * @return \Illuminate\Http\Response
      */
     public function home()
@@ -17,6 +21,12 @@ class CategoryController extends Controller
         return ['data'=>Category::home()];
     }
 
+    /**
+     * Get category with subcategory(depth)
+     * @param Request $request
+     * @param Category $category
+     * @return $this|Category
+     */
     public function getById(Request $request,Category $category)
     {
         $dept = $request->get('dept') ? $request->get('dept') : 0;
@@ -29,8 +39,7 @@ class CategoryController extends Controller
         }else{
             $data = $category;
         }
+
         return $data;
-
-
     }
 }

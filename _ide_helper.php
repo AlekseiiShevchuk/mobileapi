@@ -1399,7 +1399,7 @@ namespace {
         /**
          * Get the currently authenticated user.
          *
-         * @return \App\User|null 
+         * @return \App\Model\User|null
          * @static 
          */
         public static function user(){
@@ -1431,7 +1431,7 @@ namespace {
         /**
          * Determine if the current user is authenticated.
          *
-         * @return \App\User 
+         * @return \App\Model\User
          * @throws \Illuminate\Auth\AuthenticationException
          * @static 
          */

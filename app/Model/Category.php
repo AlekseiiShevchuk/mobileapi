@@ -13,13 +13,13 @@ class Category extends \Eloquent
         'has_children',
         'count_products'
     ];
+    const CREATED_AT = 'date_add';
+    const UPDATED_AT = 'date_upd';
     protected $hidden = [
         'products',
         'active',
         'id_parent',
         'id_shop_default',
-        'date_add',
-        'date_upd',
         'is_root_category'
     ];
 

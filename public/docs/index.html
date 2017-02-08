@@ -1,0 +1,2831 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/all.js"></script>
+
+
+          <script>
+        $(function() {
+            setupLanguages(["bash","javascript"]);
+        });
+      </script>
+      </head>
+
+  <body class="">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+        <img src="images/logo.png" />
+                    <div class="lang-selector">
+                                  <a href="#" data-language-name="bash">bash</a>
+                                  <a href="#" data-language-name="javascript">javascript</a>
+                            </div>
+                            <div class="search">
+              <input type="text" class="search" id="input-search" placeholder="Search">
+            </div>
+            <ul class="search-results"></ul>
+              <div id="toc">
+      </div>
+                    <ul class="toc-footer">
+                                  <li><a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a></li>
+                            </ul>
+            </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+          <!-- START_INFO -->
+<h1>Info</h1>
+<p>Welcome to the generated API reference.
+<a href="http://laravel.pres/docs/collection.json">Get Postman Collection</a></p>
+<!-- END_INFO -->
+<h1>Address</h1>
+<!-- START_8585cdef994300c6e966e268ad8b11f1 -->
+<h2>Country List</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/address/countries" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/address/countries",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "data": [
+        {
+            "id_country": 20,
+            "id_zone": 1,
+            "id_currency": 0,
+            "iso_code": "DK",
+            "call_prefix": 45,
+            "active": 1,
+            "contains_states": 0,
+            "need_identification_number": 0,
+            "need_zip_code": 1,
+            "zip_code_format": "NNNN",
+            "display_tax_label": 1,
+            "descriptions": [
+                {
+                    "id_country": 20,
+                    "id_lang": 6,
+                    "name": "Denmark"
+                }
+            ]
+        }
+    ]
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/address/countries</code></p>
+<p><code>HEAD api/address/countries</code></p>
+<!-- END_8585cdef994300c6e966e268ad8b11f1 -->
+<!-- START_f8b27caf42d5b7d70b462787be896975 -->
+<h2>State list by Country</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/address/countries/{country}/states" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/address/countries/{country}/states",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/address/countries/{country}/states</code></p>
+<p><code>HEAD api/address/countries/{country}/states</code></p>
+<!-- END_f8b27caf42d5b7d70b462787be896975 -->
+<!-- START_03d8faf8c932e7195c1625b7d2768686 -->
+<h2>User Addresses</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/addresses" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/addresses",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/addresses</code></p>
+<p><code>HEAD api/addresses</code></p>
+<!-- END_03d8faf8c932e7195c1625b7d2768686 -->
+<!-- START_c8fad65a796e6206c26cb584c46221b7 -->
+<h2>Create Address</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/addresses" \
+-H "Accept: application/json" \
+    -d "id_country"="7" \
+    -d "id_state"="7" \
+    -d "alias"="aperiam" \
+    -d "company"="aperiam" \
+    -d "lastname"="aperiam" \
+    -d "firstname"="aperiam" \
+    -d "address1"="aperiam" \
+    -d "address2"="aperiam" \
+    -d "postcode"="aperiam" \
+    -d "city"="aperiam" \
+    -d "phone"="aperiam" \
+    -d "phone_mobile"="aperiam" \
+</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/addresses",
+    "method": "POST",
+    "data": {
+        "id_country": 7,
+        "id_state": 7,
+        "alias": "aperiam",
+        "company": "aperiam",
+        "lastname": "aperiam",
+        "firstname": "aperiam",
+        "address1": "aperiam",
+        "address2": "aperiam",
+        "postcode": "aperiam",
+        "city": "aperiam",
+        "phone": "aperiam",
+        "phone_mobile": "aperiam"
+},
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/addresses</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id_country</td>
+<td>integer</td>
+<td>required</td>
+</tr>
+<tr>
+<td>id_state</td>
+<td>integer</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>alias</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>32</code></td>
+</tr>
+<tr>
+<td>company</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>64</code></td>
+</tr>
+<tr>
+<td>lastname</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>32</code></td>
+</tr>
+<tr>
+<td>firstname</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>32</code></td>
+</tr>
+<tr>
+<td>address1</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>128</code></td>
+</tr>
+<tr>
+<td>address2</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>128</code></td>
+</tr>
+<tr>
+<td>postcode</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>12</code></td>
+</tr>
+<tr>
+<td>city</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>64</code></td>
+</tr>
+<tr>
+<td>phone</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>32</code> Required if <code>phone_mobile</code> is ``</td>
+</tr>
+<tr>
+<td>phone_mobile</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>32</code> Required if <code>phone</code> is ``</td>
+</tr>
+</tbody>
+</table>
+<!-- END_c8fad65a796e6206c26cb584c46221b7 -->
+<!-- START_c582a8517bbeef6a1e9e4a38334ecbcf -->
+<h2>Update Address</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/addresses/{address}" \
+-H "Accept: application/json" \
+    -d "id_country"="3179" \
+    -d "alias"="perspiciatis" \
+    -d "company"="perspiciatis" \
+    -d "lastname"="perspiciatis" \
+    -d "firstname"="perspiciatis" \
+    -d "address1"="perspiciatis" \
+    -d "address2"="perspiciatis" \
+    -d "postcode"="perspiciatis" \
+    -d "city"="perspiciatis" \
+    -d "phone"="perspiciatis" \
+    -d "phone_mobile"="perspiciatis" \
+</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/addresses/{address}",
+    "method": "PUT",
+    "data": {
+        "id_country": 3179,
+        "alias": "perspiciatis",
+        "company": "perspiciatis",
+        "lastname": "perspiciatis",
+        "firstname": "perspiciatis",
+        "address1": "perspiciatis",
+        "address2": "perspiciatis",
+        "postcode": "perspiciatis",
+        "city": "perspiciatis",
+        "phone": "perspiciatis",
+        "phone_mobile": "perspiciatis"
+},
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/addresses/{address}</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id_country</td>
+<td>integer</td>
+<td>required</td>
+</tr>
+<tr>
+<td>alias</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>32</code></td>
+</tr>
+<tr>
+<td>company</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>64</code></td>
+</tr>
+<tr>
+<td>lastname</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>32</code></td>
+</tr>
+<tr>
+<td>firstname</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>32</code></td>
+</tr>
+<tr>
+<td>address1</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>128</code></td>
+</tr>
+<tr>
+<td>address2</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>128</code></td>
+</tr>
+<tr>
+<td>postcode</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>12</code></td>
+</tr>
+<tr>
+<td>city</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>64</code></td>
+</tr>
+<tr>
+<td>phone</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>32</code> Required if <code>phone_mobile</code> is ``</td>
+</tr>
+<tr>
+<td>phone_mobile</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>32</code> Required if <code>phone</code> is ``</td>
+</tr>
+</tbody>
+</table>
+<!-- END_c582a8517bbeef6a1e9e4a38334ecbcf -->
+<!-- START_e5d3d7a19170fe1ef6901a6ddf8eaeae -->
+<h2>Delete Address</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/addresses/{address}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/addresses/{address}",
+    "method": "DELETE",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE api/addresses/{address}</code></p>
+<!-- END_e5d3d7a19170fe1ef6901a6ddf8eaeae -->
+<h1>Carrier</h1>
+<!-- START_fe074919512d7e727bc186e77872521d -->
+<h2>Get Carrier by Zone location</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/carrier/zone/{zoneId}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/carrier/zone/{zoneId}",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">[
+    {
+        "id_carrier": 6,
+        "id_reference": 6,
+        "id_tax_rules_group": 0,
+        "name": "My carrier",
+        "url": "",
+        "active": 1,
+        "deleted": 0,
+        "shipping_handling": 1,
+        "range_behavior": 0,
+        "is_module": 0,
+        "is_free": 0,
+        "shipping_external": 0,
+        "need_range": 0,
+        "external_module_name": "",
+        "shipping_method": 1,
+        "position": 1,
+        "max_width": 0,
+        "max_height": 0,
+        "max_depth": 0,
+        "max_weight": "0.000000",
+        "grade": 0,
+        "descriptions": [
+            {
+                "id_carrier": 6,
+                "id_shop": 1,
+                "id_lang": 6,
+                "delay": "Delivery next day!"
+            }
+        ]
+    },
+    {
+        "id_carrier": 7,
+        "id_reference": 7,
+        "id_tax_rules_group": 0,
+        "name": "GLS PakkeShop",
+        "url": "",
+        "active": 1,
+        "deleted": 0,
+        "shipping_handling": 0,
+        "range_behavior": 0,
+        "is_module": 1,
+        "is_free": 0,
+        "shipping_external": 1,
+        "need_range": 1,
+        "external_module_name": "pakkelabels_shipping",
+        "shipping_method": 1,
+        "position": 2,
+        "max_width": 0,
+        "max_height": 0,
+        "max_depth": 0,
+        "max_weight": "0.000000",
+        "grade": 0,
+        "descriptions": [
+            {
+                "id_carrier": 7,
+                "id_shop": 1,
+                "id_lang": 6,
+                "delay": "2-4 dage"
+            }
+        ]
+    },
+    {
+        "id_carrier": 8,
+        "id_reference": 8,
+        "id_tax_rules_group": 0,
+        "name": "GLS - Omdeling til privat",
+        "url": "",
+        "active": 1,
+        "deleted": 0,
+        "shipping_handling": 0,
+        "range_behavior": 0,
+        "is_module": 1,
+        "is_free": 0,
+        "shipping_external": 1,
+        "need_range": 1,
+        "external_module_name": "pakkelabels_shipping",
+        "shipping_method": 1,
+        "position": 3,
+        "max_width": 0,
+        "max_height": 0,
+        "max_depth": 0,
+        "max_weight": "0.000000",
+        "grade": 0,
+        "descriptions": [
+            {
+                "id_carrier": 8,
+                "id_shop": 1,
+                "id_lang": 6,
+                "delay": "2-4 dage"
+            }
+        ]
+    },
+    {
+        "id_carrier": 9,
+        "id_reference": 9,
+        "id_tax_rules_group": 0,
+        "name": "GLS - Omdeling til erhverv",
+        "url": "",
+        "active": 1,
+        "deleted": 0,
+        "shipping_handling": 0,
+        "range_behavior": 0,
+        "is_module": 1,
+        "is_free": 0,
+        "shipping_external": 1,
+        "need_range": 1,
+        "external_module_name": "pakkelabels_shipping",
+        "shipping_method": 1,
+        "position": 4,
+        "max_width": 0,
+        "max_height": 0,
+        "max_depth": 0,
+        "max_weight": "0.000000",
+        "grade": 0,
+        "descriptions": [
+            {
+                "id_carrier": 9,
+                "id_shop": 1,
+                "id_lang": 6,
+                "delay": "2-4 dage"
+            }
+        ]
+    },
+    {
+        "id_carrier": 10,
+        "id_reference": 10,
+        "id_tax_rules_group": 0,
+        "name": "PostNord Valgfrit udleveringssted",
+        "url": "",
+        "active": 1,
+        "deleted": 0,
+        "shipping_handling": 0,
+        "range_behavior": 0,
+        "is_module": 1,
+        "is_free": 0,
+        "shipping_external": 1,
+        "need_range": 1,
+        "external_module_name": "pakkelabels_shipping",
+        "shipping_method": 1,
+        "position": 5,
+        "max_width": 0,
+        "max_height": 0,
+        "max_depth": 0,
+        "max_weight": "0.000000",
+        "grade": 0,
+        "descriptions": [
+            {
+                "id_carrier": 10,
+                "id_shop": 1,
+                "id_lang": 6,
+                "delay": "2-4 dage"
+            }
+        ]
+    },
+    {
+        "id_carrier": 11,
+        "id_reference": 11,
+        "id_tax_rules_group": 0,
+        "name": "PostNord - Omdeling til erhverv",
+        "url": "",
+        "active": 1,
+        "deleted": 0,
+        "shipping_handling": 0,
+        "range_behavior": 0,
+        "is_module": 1,
+        "is_free": 0,
+        "shipping_external": 1,
+        "need_range": 1,
+        "external_module_name": "pakkelabels_shipping",
+        "shipping_method": 1,
+        "position": 6,
+        "max_width": 0,
+        "max_height": 0,
+        "max_depth": 0,
+        "max_weight": "0.000000",
+        "grade": 0,
+        "descriptions": [
+            {
+                "id_carrier": 11,
+                "id_shop": 1,
+                "id_lang": 6,
+                "delay": "2-4 dage"
+            }
+        ]
+    },
+    {
+        "id_carrier": 12,
+        "id_reference": 12,
+        "id_tax_rules_group": 0,
+        "name": "PostNord - Omdeling til privat",
+        "url": "",
+        "active": 1,
+        "deleted": 0,
+        "shipping_handling": 0,
+        "range_behavior": 0,
+        "is_module": 1,
+        "is_free": 0,
+        "shipping_external": 1,
+        "need_range": 1,
+        "external_module_name": "pakkelabels_shipping",
+        "shipping_method": 1,
+        "position": 7,
+        "max_width": 0,
+        "max_height": 0,
+        "max_depth": 0,
+        "max_weight": "0.000000",
+        "grade": 0,
+        "descriptions": [
+            {
+                "id_carrier": 12,
+                "id_shop": 1,
+                "id_lang": 6,
+                "delay": "2-4 dage"
+            }
+        ]
+    },
+    {
+        "id_carrier": 13,
+        "id_reference": 13,
+        "id_tax_rules_group": 0,
+        "name": "DAO Pakkeshop",
+        "url": "",
+        "active": 1,
+        "deleted": 0,
+        "shipping_handling": 0,
+        "range_behavior": 0,
+        "is_module": 1,
+        "is_free": 0,
+        "shipping_external": 1,
+        "need_range": 1,
+        "external_module_name": "pakkelabels_shipping",
+        "shipping_method": 1,
+        "position": 8,
+        "max_width": 0,
+        "max_height": 0,
+        "max_depth": 0,
+        "max_weight": "0.000000",
+        "grade": 0,
+        "descriptions": [
+            {
+                "id_carrier": 13,
+                "id_shop": 1,
+                "id_lang": 6,
+                "delay": "2-4 dage"
+            }
+        ]
+    },
+    {
+        "id_carrier": 14,
+        "id_reference": 14,
+        "id_tax_rules_group": 0,
+        "name": "DAO Direkte",
+        "url": "",
+        "active": 1,
+        "deleted": 0,
+        "shipping_handling": 0,
+        "range_behavior": 0,
+        "is_module": 1,
+        "is_free": 0,
+        "shipping_external": 1,
+        "need_range": 1,
+        "external_module_name": "pakkelabels_shipping",
+        "shipping_method": 1,
+        "position": 9,
+        "max_width": 0,
+        "max_height": 0,
+        "max_depth": 0,
+        "max_weight": "0.000000",
+        "grade": 0,
+        "descriptions": [
+            {
+                "id_carrier": 14,
+                "id_shop": 1,
+                "id_lang": 6,
+                "delay": "2-4 dage"
+            }
+        ]
+    },
+    {
+        "id_carrier": 15,
+        "id_reference": 5,
+        "id_tax_rules_group": 0,
+        "name": "new store",
+        "url": "",
+        "active": 1,
+        "deleted": 0,
+        "shipping_handling": 0,
+        "range_behavior": 0,
+        "is_module": 0,
+        "is_free": 0,
+        "shipping_external": 0,
+        "need_range": 0,
+        "external_module_name": "",
+        "shipping_method": 1,
+        "position": 0,
+        "max_width": 0,
+        "max_height": 0,
+        "max_depth": 0,
+        "max_weight": "0.000000",
+        "grade": 0,
+        "descriptions": [
+            {
+                "id_carrier": 15,
+                "id_shop": 1,
+                "id_lang": 6,
+                "delay": "Pick up in-store"
+            }
+        ]
+    }
+]</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/carrier/zone/{zoneId}</code></p>
+<p><code>HEAD api/carrier/zone/{zoneId}</code></p>
+<!-- END_fe074919512d7e727bc186e77872521d -->
+<h1>Category</h1>
+<!-- START_51e581cc9a1f9ee73cc207ec4e67e8d4 -->
+<h2>Root Menu Category</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/categories" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/categories",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/categories</code></p>
+<p><code>HEAD api/categories</code></p>
+<!-- END_51e581cc9a1f9ee73cc207ec4e67e8d4 -->
+<!-- START_c3e1c84c6b0ff14496d71900bd82f60c -->
+<h2>Get category with subcategory(depth)</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/categories/{category}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/categories/{category}",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/categories/{category}</code></p>
+<p><code>HEAD api/categories/{category}</code></p>
+<!-- END_c3e1c84c6b0ff14496d71900bd82f60c -->
+<h1>Product</h1>
+<!-- START_d6315c0f80fdc5b8b5cafcb7768d054e -->
+<h2>Get all products with limit(default: 5)</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/products" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/products",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "total": 19,
+    "per_page": 5,
+    "current_page": 1,
+    "last_page": 4,
+    "next_page_url": "http:\/\/localhostapi\/products?page=2",
+    "prev_page_url": null,
+    "from": 1,
+    "to": 5,
+    "data": [
+        {
+            "id_product": 1,
+            "id_supplier": 3,
+            "id_manufacturer": 2,
+            "id_category_default": 2,
+            "id_shop_default": 1,
+            "id_tax_rules_group": 1,
+            "on_sale": 1,
+            "online_only": 0,
+            "ean13": "",
+            "upc": "",
+            "ecotax": "0.000000",
+            "quantity": 0,
+            "minimal_quantity": 1,
+            "price": "130.000000",
+            "wholesale_price": "130.000000",
+            "unity": "",
+            "unit_price_ratio": "1.250000",
+            "additional_shipping_cost": "0.00",
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "width": "0.000000",
+            "height": "0.000000",
+            "depth": "0.000000",
+            "weight": "0.000000",
+            "out_of_stock": 2,
+            "quantity_discount": 0,
+            "customizable": 0,
+            "uploadable_files": 0,
+            "text_fields": 0,
+            "active": 1,
+            "redirect_type": "",
+            "id_product_redirected": 0,
+            "available_for_order": 1,
+            "available_date": "0000-00-00",
+            "condition": "new",
+            "show_price": 1,
+            "indexed": 1,
+            "visibility": "both",
+            "cache_is_pack": 0,
+            "cache_has_attachments": 0,
+            "is_virtual": 0,
+            "cache_default_attribute": 1,
+            "date_add": "2015-12-09 14:56:02",
+            "date_upd": "2015-12-09 14:56:02",
+            "advanced_stock_management": 0,
+            "pack_stock_type": 3,
+            "has_attribute": true,
+            "images": [
+                {
+                    "id_image": 1,
+                    "id_product": 1,
+                    "position": 1,
+                    "cover": 1
+                },
+                {
+                    "id_image": 2,
+                    "id_product": 1,
+                    "position": 2,
+                    "cover": null
+                },
+                {
+                    "id_image": 3,
+                    "id_product": 1,
+                    "position": 3,
+                    "cover": null
+                },
+                {
+                    "id_image": 4,
+                    "id_product": 1,
+                    "position": 4,
+                    "cover": null
+                },
+                {
+                    "id_image": 5,
+                    "id_product": 1,
+                    "position": 5,
+                    "cover": null
+                },
+                {
+                    "id_image": 6,
+                    "id_product": 1,
+                    "position": 6,
+                    "cover": null
+                }
+            ],
+            "descriptions": [
+                {
+                    "id_product": 1,
+                    "id_shop": 1,
+                    "id_lang": 6,
+                    "description": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;We are proud to offer you our hi-tech original goods. &lt;em&gt;The products of our store are the real bestsellers and we have a great number of faithful customers.&lt;\/em&gt; Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store&lt;\/span&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;.&lt;\/span&gt;&lt;\/p&gt;",
+                    "description_short": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;\/span&gt;&lt;\/p&gt;",
+                    "link_rewrite": "alcatel-one-fierce-prepaid-phone",
+                    "meta_description": "",
+                    "meta_keywords": "",
+                    "meta_title": "",
+                    "name": "Alcatel One Fierce Prepaid Phone ",
+                    "available_now": "",
+                    "available_later": ""
+                }
+            ],
+            "manufacturer": {
+                "id_manufacturer": 1,
+                "name": "Samsung",
+                "date_add": "2015-12-09 14:56:02",
+                "date_upd": "2017-01-26 14:54:35"
+            },
+            "sale": null,
+            "currency": [
+                {
+                    "name": "Danish krone",
+                    "iso_code": "DKK",
+                    "iso_code_num": "208",
+                    "sign": "kr",
+                    "blank": 1,
+                    "format": 2,
+                    "decimals": 1,
+                    "conversion_rate": "1.000000"
+                }
+            ],
+            "specific_price": [
+                {
+                    "id_specific_price": 1,
+                    "id_currency": 0,
+                    "id_country": 0,
+                    "id_group": 0,
+                    "id_customer": 0,
+                    "id_product_attribute": 0,
+                    "price": "-1.000000",
+                    "from_quantity": 1,
+                    "reduction": "0.200000",
+                    "reduction_tax": 1,
+                    "reduction_type": "percentage",
+                    "from": "0000-00-00 00:00:00",
+                    "to": "0000-00-00 00:00:00"
+                }
+            ]
+        },
+        {
+            "id_product": 2,
+            "id_supplier": 1,
+            "id_manufacturer": 8,
+            "id_category_default": 2,
+            "id_shop_default": 1,
+            "id_tax_rules_group": 0,
+            "on_sale": 1,
+            "online_only": 0,
+            "ean13": "",
+            "upc": "",
+            "ecotax": "0.000000",
+            "quantity": 0,
+            "minimal_quantity": 1,
+            "price": "150.000000",
+            "wholesale_price": "150.000000",
+            "unity": "",
+            "unit_price_ratio": "1.250000",
+            "additional_shipping_cost": "0.00",
+            "reference": "00102",
+            "supplier_reference": "",
+            "location": "",
+            "width": "0.000000",
+            "height": "0.000000",
+            "depth": "0.000000",
+            "weight": "0.000000",
+            "out_of_stock": 2,
+            "quantity_discount": 0,
+            "customizable": 0,
+            "uploadable_files": 0,
+            "text_fields": 0,
+            "active": 1,
+            "redirect_type": "404",
+            "id_product_redirected": 0,
+            "available_for_order": 1,
+            "available_date": "0000-00-00",
+            "condition": "new",
+            "show_price": 1,
+            "indexed": 1,
+            "visibility": "both",
+            "cache_is_pack": 0,
+            "cache_has_attachments": 0,
+            "is_virtual": 0,
+            "cache_default_attribute": 51,
+            "date_add": "2015-12-09 14:56:03",
+            "date_upd": "2017-01-30 11:31:53",
+            "advanced_stock_management": 0,
+            "pack_stock_type": 3,
+            "has_attribute": true,
+            "images": [
+                {
+                    "id_image": 7,
+                    "id_product": 2,
+                    "position": 1,
+                    "cover": 1
+                },
+                {
+                    "id_image": 8,
+                    "id_product": 2,
+                    "position": 2,
+                    "cover": null
+                },
+                {
+                    "id_image": 9,
+                    "id_product": 2,
+                    "position": 3,
+                    "cover": null
+                },
+                {
+                    "id_image": 10,
+                    "id_product": 2,
+                    "position": 4,
+                    "cover": null
+                },
+                {
+                    "id_image": 11,
+                    "id_product": 2,
+                    "position": 5,
+                    "cover": null
+                },
+                {
+                    "id_image": 12,
+                    "id_product": 2,
+                    "position": 6,
+                    "cover": null
+                }
+            ],
+            "descriptions": [
+                {
+                    "id_product": 2,
+                    "id_shop": 1,
+                    "id_lang": 6,
+                    "description": "&lt;p&gt;&lt;strong&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;\/span&gt;&lt;\/p&gt;\n&lt;p&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.&lt;\/span&gt;&lt;\/p&gt;\n&lt;p&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt;We are proud to offer you our hi-tech original goods. &lt;em&gt;The products of our store are the real bestsellers and we have a great number of faithful customers.&lt;\/em&gt; Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.&lt;\/span&gt;&lt;\/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store&lt;\/span&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt;.&lt;\/span&gt;&lt;\/p&gt;",
+                    "description_short": "&lt;p&gt;&lt;strong&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores.&lt;\/span&gt;&lt;\/p&gt;",
+                    "link_rewrite": "alcatel-one-touch-fire",
+                    "meta_description": "",
+                    "meta_keywords": "",
+                    "meta_title": "",
+                    "name": "Alcatel One Touch Fire",
+                    "available_now": "",
+                    "available_later": ""
+                }
+            ],
+            "manufacturer": null,
+            "sale": null,
+            "currency": [],
+            "specific_price": [
+                {
+                    "id_specific_price": 13,
+                    "id_currency": 0,
+                    "id_country": 0,
+                    "id_group": 0,
+                    "id_customer": 0,
+                    "id_product_attribute": 0,
+                    "price": "-1.000000",
+                    "from_quantity": 1,
+                    "reduction": "10.000000",
+                    "reduction_tax": 0,
+                    "reduction_type": "amount",
+                    "from": "0000-00-00 00:00:00",
+                    "to": "0000-00-00 00:00:00"
+                },
+                {
+                    "id_specific_price": 14,
+                    "id_currency": 0,
+                    "id_country": 0,
+                    "id_group": 0,
+                    "id_customer": 0,
+                    "id_product_attribute": 0,
+                    "price": "-1.000000",
+                    "from_quantity": 5,
+                    "reduction": "10.000000",
+                    "reduction_tax": 1,
+                    "reduction_type": "amount",
+                    "from": "0000-00-00 00:00:00",
+                    "to": "0000-00-00 00:00:00"
+                }
+            ]
+        },
+        {
+            "id_product": 3,
+            "id_supplier": 3,
+            "id_manufacturer": 7,
+            "id_category_default": 3,
+            "id_shop_default": 1,
+            "id_tax_rules_group": 1,
+            "on_sale": 1,
+            "online_only": 0,
+            "ean13": "",
+            "upc": "",
+            "ecotax": "0.000000",
+            "quantity": 0,
+            "minimal_quantity": 1,
+            "price": "320.000000",
+            "wholesale_price": "320.000000",
+            "unity": "",
+            "unit_price_ratio": "1.250000",
+            "additional_shipping_cost": "0.00",
+            "reference": "00103",
+            "supplier_reference": "",
+            "location": "",
+            "width": "0.000000",
+            "height": "0.000000",
+            "depth": "0.000000",
+            "weight": "0.000000",
+            "out_of_stock": 2,
+            "quantity_discount": 0,
+            "customizable": 0,
+            "uploadable_files": 0,
+            "text_fields": 0,
+            "active": 1,
+            "redirect_type": "",
+            "id_product_redirected": 0,
+            "available_for_order": 1,
+            "available_date": "0000-00-00",
+            "condition": "new",
+            "show_price": 1,
+            "indexed": 1,
+            "visibility": "both",
+            "cache_is_pack": 0,
+            "cache_has_attachments": 0,
+            "is_virtual": 0,
+            "cache_default_attribute": 111,
+            "date_add": "2015-12-09 14:56:03",
+            "date_upd": "2017-01-30 11:21:11",
+            "advanced_stock_management": 0,
+            "pack_stock_type": 3,
+            "has_attribute": true,
+            "images": [
+                {
+                    "id_image": 13,
+                    "id_product": 3,
+                    "position": 1,
+                    "cover": 1
+                },
+                {
+                    "id_image": 14,
+                    "id_product": 3,
+                    "position": 2,
+                    "cover": null
+                },
+                {
+                    "id_image": 15,
+                    "id_product": 3,
+                    "position": 3,
+                    "cover": null
+                },
+                {
+                    "id_image": 16,
+                    "id_product": 3,
+                    "position": 4,
+                    "cover": null
+                },
+                {
+                    "id_image": 17,
+                    "id_product": 3,
+                    "position": 5,
+                    "cover": null
+                },
+                {
+                    "id_image": 18,
+                    "id_product": 3,
+                    "position": 6,
+                    "cover": null
+                }
+            ],
+            "descriptions": [
+                {
+                    "id_product": 3,
+                    "id_shop": 1,
+                    "id_lang": 6,
+                    "description": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;We are proud to offer you our hi-tech original goods. &lt;em&gt;The products of our store are the real bestsellers and we have a great number of faithful customers.&lt;\/em&gt; Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store&lt;\/span&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;.&lt;\/span&gt;&lt;\/p&gt;",
+                    "description_short": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;\/span&gt;&lt;\/p&gt;",
+                    "link_rewrite": "apple-iphone-5c",
+                    "meta_description": "",
+                    "meta_keywords": "",
+                    "meta_title": "",
+                    "name": "Apple iPhone 5c",
+                    "available_now": "",
+                    "available_later": ""
+                }
+            ],
+            "manufacturer": null,
+            "sale": null,
+            "currency": [],
+            "specific_price": [
+                {
+                    "id_specific_price": 3,
+                    "id_currency": 0,
+                    "id_country": 0,
+                    "id_group": 0,
+                    "id_customer": 0,
+                    "id_product_attribute": 0,
+                    "price": "-1.000000",
+                    "from_quantity": 1,
+                    "reduction": "0.200000",
+                    "reduction_tax": 1,
+                    "reduction_type": "percentage",
+                    "from": "0000-00-00 00:00:00",
+                    "to": "0000-00-00 00:00:00"
+                }
+            ]
+        },
+        {
+            "id_product": 4,
+            "id_supplier": 5,
+            "id_manufacturer": 10,
+            "id_category_default": 2,
+            "id_shop_default": 1,
+            "id_tax_rules_group": 1,
+            "on_sale": 1,
+            "online_only": 0,
+            "ean13": "",
+            "upc": "",
+            "ecotax": "0.000000",
+            "quantity": 0,
+            "minimal_quantity": 1,
+            "price": "460.000000",
+            "wholesale_price": "460.000000",
+            "unity": "",
+            "unit_price_ratio": "1.250000",
+            "additional_shipping_cost": "0.00",
+            "reference": "00104",
+            "supplier_reference": "",
+            "location": "",
+            "width": "0.000000",
+            "height": "0.000000",
+            "depth": "0.000000",
+            "weight": "0.000000",
+            "out_of_stock": 2,
+            "quantity_discount": 0,
+            "customizable": 0,
+            "uploadable_files": 0,
+            "text_fields": 0,
+            "active": 1,
+            "redirect_type": "",
+            "id_product_redirected": 0,
+            "available_for_order": 1,
+            "available_date": "0000-00-00",
+            "condition": "new",
+            "show_price": 1,
+            "indexed": 1,
+            "visibility": "both",
+            "cache_is_pack": 0,
+            "cache_has_attachments": 0,
+            "is_virtual": 0,
+            "cache_default_attribute": 159,
+            "date_add": "2015-12-09 14:56:03",
+            "date_upd": "2017-01-30 11:21:11",
+            "advanced_stock_management": 0,
+            "pack_stock_type": 3,
+            "has_attribute": true,
+            "images": [
+                {
+                    "id_image": 19,
+                    "id_product": 4,
+                    "position": 1,
+                    "cover": 1
+                },
+                {
+                    "id_image": 20,
+                    "id_product": 4,
+                    "position": 2,
+                    "cover": null
+                },
+                {
+                    "id_image": 21,
+                    "id_product": 4,
+                    "position": 3,
+                    "cover": null
+                },
+                {
+                    "id_image": 22,
+                    "id_product": 4,
+                    "position": 4,
+                    "cover": null
+                },
+                {
+                    "id_image": 23,
+                    "id_product": 4,
+                    "position": 5,
+                    "cover": null
+                },
+                {
+                    "id_image": 24,
+                    "id_product": 4,
+                    "position": 6,
+                    "cover": null
+                }
+            ],
+            "descriptions": [
+                {
+                    "id_product": 4,
+                    "id_shop": 1,
+                    "id_lang": 6,
+                    "description": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;We are proud to offer you our hi-tech original goods. &lt;em&gt;The products of our store are the real bestsellers and we have a great number of faithful customers.&lt;\/em&gt; Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store&lt;\/span&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;.&lt;\/span&gt;&lt;\/p&gt;",
+                    "description_short": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;\/span&gt;&lt;\/p&gt;",
+                    "link_rewrite": "apple-iphone-5s",
+                    "meta_description": "",
+                    "meta_keywords": "",
+                    "meta_title": "",
+                    "name": "Apple iPhone 5s",
+                    "available_now": "",
+                    "available_later": ""
+                }
+            ],
+            "manufacturer": null,
+            "sale": null,
+            "currency": [],
+            "specific_price": [
+                {
+                    "id_specific_price": 4,
+                    "id_currency": 0,
+                    "id_country": 0,
+                    "id_group": 0,
+                    "id_customer": 0,
+                    "id_product_attribute": 0,
+                    "price": "-1.000000",
+                    "from_quantity": 1,
+                    "reduction": "0.200000",
+                    "reduction_tax": 1,
+                    "reduction_type": "percentage",
+                    "from": "0000-00-00 00:00:00",
+                    "to": "0000-00-00 00:00:00"
+                }
+            ]
+        },
+        {
+            "id_product": 5,
+            "id_supplier": 1,
+            "id_manufacturer": 9,
+            "id_category_default": 2,
+            "id_shop_default": 1,
+            "id_tax_rules_group": 1,
+            "on_sale": 1,
+            "online_only": 0,
+            "ean13": "",
+            "upc": "",
+            "ecotax": "0.000000",
+            "quantity": 0,
+            "minimal_quantity": 1,
+            "price": "280.000000",
+            "wholesale_price": "280.000000",
+            "unity": "",
+            "unit_price_ratio": "1.000000",
+            "additional_shipping_cost": "0.00",
+            "reference": "00105",
+            "supplier_reference": "",
+            "location": "",
+            "width": "0.000000",
+            "height": "0.000000",
+            "depth": "0.000000",
+            "weight": "0.000000",
+            "out_of_stock": 2,
+            "quantity_discount": 0,
+            "customizable": 0,
+            "uploadable_files": 0,
+            "text_fields": 0,
+            "active": 1,
+            "redirect_type": "",
+            "id_product_redirected": 0,
+            "available_for_order": 1,
+            "available_date": "0000-00-00",
+            "condition": "new",
+            "show_price": 1,
+            "indexed": 1,
+            "visibility": "both",
+            "cache_is_pack": 0,
+            "cache_has_attachments": 0,
+            "is_virtual": 0,
+            "cache_default_attribute": 199,
+            "date_add": "2015-12-09 14:56:03",
+            "date_upd": "2017-01-30 11:21:11",
+            "advanced_stock_management": 0,
+            "pack_stock_type": 3,
+            "has_attribute": true,
+            "images": [
+                {
+                    "id_image": 25,
+                    "id_product": 5,
+                    "position": 1,
+                    "cover": 1
+                },
+                {
+                    "id_image": 26,
+                    "id_product": 5,
+                    "position": 2,
+                    "cover": null
+                },
+                {
+                    "id_image": 27,
+                    "id_product": 5,
+                    "position": 3,
+                    "cover": null
+                },
+                {
+                    "id_image": 28,
+                    "id_product": 5,
+                    "position": 4,
+                    "cover": null
+                },
+                {
+                    "id_image": 29,
+                    "id_product": 5,
+                    "position": 5,
+                    "cover": null
+                },
+                {
+                    "id_image": 30,
+                    "id_product": 5,
+                    "position": 6,
+                    "cover": null
+                }
+            ],
+            "descriptions": [
+                {
+                    "id_product": 5,
+                    "id_shop": 1,
+                    "id_lang": 6,
+                    "description": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;We are proud to offer you our hi-tech original goods. &lt;em&gt;The products of our store are the real bestsellers and we have a great number of faithful customers.&lt;\/em&gt; Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store&lt;\/span&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;.&lt;\/span&gt;&lt;\/p&gt;",
+                    "description_short": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores.&lt;\/span&gt;&lt;\/p&gt;",
+                    "link_rewrite": "asus-zenfone-6-a601cg",
+                    "meta_description": "",
+                    "meta_keywords": "",
+                    "meta_title": "",
+                    "name": "ASUS ZENFONE 6 A601CG",
+                    "available_now": "",
+                    "available_later": ""
+                }
+            ],
+            "manufacturer": null,
+            "sale": null,
+            "currency": [],
+            "specific_price": []
+        }
+    ]
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/products</code></p>
+<p><code>HEAD api/products</code></p>
+<!-- END_d6315c0f80fdc5b8b5cafcb7768d054e -->
+<!-- START_963ec11fd78da94f0900b0c6baf959a3 -->
+<h2>Get product</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/products/{product}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/products/{product}",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "id_product": 1,
+    "id_supplier": 3,
+    "id_manufacturer": 2,
+    "id_category_default": 2,
+    "id_shop_default": 1,
+    "id_tax_rules_group": 1,
+    "on_sale": 1,
+    "online_only": 0,
+    "ean13": "",
+    "upc": "",
+    "ecotax": "0.000000",
+    "quantity": 0,
+    "minimal_quantity": 1,
+    "price": "130.000000",
+    "wholesale_price": "130.000000",
+    "unity": "",
+    "unit_price_ratio": "1.250000",
+    "additional_shipping_cost": "0.00",
+    "reference": "00101",
+    "supplier_reference": "",
+    "location": "",
+    "width": "0.000000",
+    "height": "0.000000",
+    "depth": "0.000000",
+    "weight": "0.000000",
+    "out_of_stock": 2,
+    "quantity_discount": 0,
+    "customizable": 0,
+    "uploadable_files": 0,
+    "text_fields": 0,
+    "active": 1,
+    "redirect_type": "",
+    "id_product_redirected": 0,
+    "available_for_order": 1,
+    "available_date": "0000-00-00",
+    "condition": "new",
+    "show_price": 1,
+    "indexed": 1,
+    "visibility": "both",
+    "cache_is_pack": 0,
+    "cache_has_attachments": 0,
+    "is_virtual": 0,
+    "cache_default_attribute": 1,
+    "date_add": "2015-12-09 14:56:02",
+    "date_upd": "2015-12-09 14:56:02",
+    "advanced_stock_management": 0,
+    "pack_stock_type": 3,
+    "has_attribute": true,
+    "images": [
+        {
+            "id_image": 2,
+            "id_product": 1,
+            "position": 2,
+            "cover": null
+        },
+        {
+            "id_image": 3,
+            "id_product": 1,
+            "position": 3,
+            "cover": null
+        },
+        {
+            "id_image": 4,
+            "id_product": 1,
+            "position": 4,
+            "cover": null
+        },
+        {
+            "id_image": 5,
+            "id_product": 1,
+            "position": 5,
+            "cover": null
+        },
+        {
+            "id_image": 6,
+            "id_product": 1,
+            "position": 6,
+            "cover": null
+        },
+        {
+            "id_image": 1,
+            "id_product": 1,
+            "position": 1,
+            "cover": 1
+        }
+    ],
+    "descriptions": [
+        {
+            "id_product": 1,
+            "id_shop": 1,
+            "id_lang": 6,
+            "description": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;We are proud to offer you our hi-tech original goods. &lt;em&gt;The products of our store are the real bestsellers and we have a great number of faithful customers.&lt;\/em&gt; Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store&lt;\/span&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;.&lt;\/span&gt;&lt;\/p&gt;",
+            "description_short": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;\/span&gt;&lt;\/p&gt;",
+            "link_rewrite": "alcatel-one-fierce-prepaid-phone",
+            "meta_description": "",
+            "meta_keywords": "",
+            "meta_title": "",
+            "name": "Alcatel One Fierce Prepaid Phone ",
+            "available_now": "",
+            "available_later": ""
+        }
+    ],
+    "manufacturer": {
+        "id_manufacturer": 1,
+        "name": "Samsung",
+        "date_add": "2015-12-09 14:56:02",
+        "date_upd": "2017-01-26 14:54:35"
+    },
+    "sale": null,
+    "currency": [
+        {
+            "name": "Danish krone",
+            "iso_code": "DKK",
+            "iso_code_num": "208",
+            "sign": "kr",
+            "blank": 1,
+            "format": 2,
+            "decimals": 1,
+            "conversion_rate": "1.000000"
+        }
+    ],
+    "specific_price": [
+        {
+            "id_specific_price": 1,
+            "id_currency": 0,
+            "id_country": 0,
+            "id_group": 0,
+            "id_customer": 0,
+            "id_product_attribute": 0,
+            "price": "-1.000000",
+            "from_quantity": 1,
+            "reduction": "0.200000",
+            "reduction_tax": 1,
+            "reduction_type": "percentage",
+            "from": "0000-00-00 00:00:00",
+            "to": "0000-00-00 00:00:00"
+        }
+    ]
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/products/{product}</code></p>
+<p><code>HEAD api/products/{product}</code></p>
+<!-- END_963ec11fd78da94f0900b0c6baf959a3 -->
+<!-- START_3453704059d258c15690ff3a47092546 -->
+<h2>Get products by Category  with limit(default: 5)</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/categories/{categoryId}/products" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/categories/{categoryId}/products",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "total": 0,
+    "per_page": 5,
+    "current_page": 1,
+    "last_page": 0,
+    "next_page_url": null,
+    "prev_page_url": null,
+    "from": null,
+    "to": null,
+    "data": []
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/categories/{categoryId}/products</code></p>
+<p><code>HEAD api/categories/{categoryId}/products</code></p>
+<!-- END_3453704059d258c15690ff3a47092546 -->
+<!-- START_5ba279588bc99b2a5d15cebdcd40c4cf -->
+<h2>Get new products  with limit(default: 3)</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/products/new" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/products/new",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "total": 19,
+    "per_page": 3,
+    "current_page": 1,
+    "last_page": 7,
+    "next_page_url": "http:\/\/localhostapi\/products\/new?page=2",
+    "prev_page_url": null,
+    "from": 1,
+    "to": 3,
+    "data": [
+        {
+            "id_product": 20,
+            "id_supplier": 0,
+            "id_manufacturer": 0,
+            "id_category_default": 2,
+            "id_shop_default": 1,
+            "id_tax_rules_group": 0,
+            "on_sale": 0,
+            "online_only": 0,
+            "ean13": "",
+            "upc": "",
+            "ecotax": "0.000000",
+            "quantity": 0,
+            "minimal_quantity": 1,
+            "price": "10.000000",
+            "wholesale_price": "0.000000",
+            "unity": "",
+            "unit_price_ratio": "0.000000",
+            "additional_shipping_cost": "0.00",
+            "reference": "",
+            "supplier_reference": "",
+            "location": "",
+            "width": "0.000000",
+            "height": "0.000000",
+            "depth": "0.000000",
+            "weight": "0.000000",
+            "out_of_stock": 2,
+            "quantity_discount": 0,
+            "customizable": 0,
+            "uploadable_files": 0,
+            "text_fields": 0,
+            "active": 1,
+            "redirect_type": "404",
+            "id_product_redirected": 0,
+            "available_for_order": 1,
+            "available_date": "0000-00-00",
+            "condition": "new",
+            "show_price": 1,
+            "indexed": 1,
+            "visibility": "both",
+            "cache_is_pack": 0,
+            "cache_has_attachments": 0,
+            "is_virtual": 0,
+            "cache_default_attribute": 853,
+            "date_add": "2017-01-30 12:01:49",
+            "date_upd": "2017-01-30 12:11:25",
+            "advanced_stock_management": 0,
+            "pack_stock_type": 3,
+            "has_attribute": true,
+            "images": [],
+            "descriptions": [
+                {
+                    "id_product": 20,
+                    "id_shop": 1,
+                    "id_lang": 6,
+                    "description": "",
+                    "description_short": "",
+                    "link_rewrite": "test",
+                    "meta_description": "",
+                    "meta_keywords": "",
+                    "meta_title": "",
+                    "name": "test",
+                    "available_now": "",
+                    "available_later": ""
+                }
+            ],
+            "manufacturer": null,
+            "sale": null,
+            "currency": [],
+            "specific_price": []
+        },
+        {
+            "id_product": 19,
+            "id_supplier": 1,
+            "id_manufacturer": 3,
+            "id_category_default": 2,
+            "id_shop_default": 1,
+            "id_tax_rules_group": 1,
+            "on_sale": 0,
+            "online_only": 0,
+            "ean13": "",
+            "upc": "",
+            "ecotax": "0.000000",
+            "quantity": 0,
+            "minimal_quantity": 1,
+            "price": "180.000000",
+            "wholesale_price": "180.000000",
+            "unity": "",
+            "unit_price_ratio": "1.000000",
+            "additional_shipping_cost": "0.00",
+            "reference": "00119",
+            "supplier_reference": "",
+            "location": "",
+            "width": "0.000000",
+            "height": "0.000000",
+            "depth": "0.000000",
+            "weight": "0.000000",
+            "out_of_stock": 2,
+            "quantity_discount": 0,
+            "customizable": 0,
+            "uploadable_files": 0,
+            "text_fields": 0,
+            "active": 1,
+            "redirect_type": "",
+            "id_product_redirected": 0,
+            "available_for_order": 1,
+            "available_date": "0000-00-00",
+            "condition": "new",
+            "show_price": 1,
+            "indexed": 1,
+            "visibility": "both",
+            "cache_is_pack": 0,
+            "cache_has_attachments": 0,
+            "is_virtual": 0,
+            "cache_default_attribute": 821,
+            "date_add": "2015-12-09 14:56:04",
+            "date_upd": "2017-01-30 11:21:11",
+            "advanced_stock_management": 0,
+            "pack_stock_type": 3,
+            "has_attribute": true,
+            "images": [
+                {
+                    "id_image": 110,
+                    "id_product": 19,
+                    "position": 2,
+                    "cover": null
+                },
+                {
+                    "id_image": 111,
+                    "id_product": 19,
+                    "position": 3,
+                    "cover": null
+                },
+                {
+                    "id_image": 112,
+                    "id_product": 19,
+                    "position": 4,
+                    "cover": null
+                },
+                {
+                    "id_image": 113,
+                    "id_product": 19,
+                    "position": 5,
+                    "cover": null
+                },
+                {
+                    "id_image": 114,
+                    "id_product": 19,
+                    "position": 6,
+                    "cover": null
+                },
+                {
+                    "id_image": 109,
+                    "id_product": 19,
+                    "position": 1,
+                    "cover": 1
+                }
+            ],
+            "descriptions": [
+                {
+                    "id_product": 19,
+                    "id_shop": 1,
+                    "id_lang": 6,
+                    "description": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;We are proud to offer you our hi-tech original goods. &lt;em&gt;The products of our store are the real bestsellers and we have a great number of faithful customers.&lt;\/em&gt; Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store&lt;\/span&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;.&lt;\/span&gt;&lt;\/p&gt;",
+                    "description_short": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;\/span&gt;&lt;\/p&gt;",
+                    "link_rewrite": "samsung-galaxy-s-iii",
+                    "meta_description": "",
+                    "meta_keywords": "",
+                    "meta_title": "",
+                    "name": "Samsung Galaxy S III ",
+                    "available_now": "",
+                    "available_later": ""
+                }
+            ],
+            "manufacturer": null,
+            "sale": null,
+            "currency": [],
+            "specific_price": []
+        },
+        {
+            "id_product": 18,
+            "id_supplier": 1,
+            "id_manufacturer": 4,
+            "id_category_default": 2,
+            "id_shop_default": 1,
+            "id_tax_rules_group": 1,
+            "on_sale": 0,
+            "online_only": 0,
+            "ean13": "",
+            "upc": "",
+            "ecotax": "0.000000",
+            "quantity": 0,
+            "minimal_quantity": 1,
+            "price": "400.000000",
+            "wholesale_price": "400.000000",
+            "unity": "",
+            "unit_price_ratio": "1.111111",
+            "additional_shipping_cost": "0.00",
+            "reference": "00118",
+            "supplier_reference": "",
+            "location": "",
+            "width": "0.000000",
+            "height": "0.000000",
+            "depth": "0.000000",
+            "weight": "0.000000",
+            "out_of_stock": 2,
+            "quantity_discount": 0,
+            "customizable": 0,
+            "uploadable_files": 0,
+            "text_fields": 0,
+            "active": 1,
+            "redirect_type": "",
+            "id_product_redirected": 0,
+            "available_for_order": 1,
+            "available_date": "0000-00-00",
+            "condition": "new",
+            "show_price": 1,
+            "indexed": 1,
+            "visibility": "both",
+            "cache_is_pack": 0,
+            "cache_has_attachments": 0,
+            "is_virtual": 0,
+            "cache_default_attribute": 781,
+            "date_add": "2015-12-09 14:56:04",
+            "date_upd": "2017-01-30 11:21:11",
+            "advanced_stock_management": 0,
+            "pack_stock_type": 3,
+            "has_attribute": true,
+            "images": [
+                {
+                    "id_image": 104,
+                    "id_product": 18,
+                    "position": 2,
+                    "cover": null
+                },
+                {
+                    "id_image": 105,
+                    "id_product": 18,
+                    "position": 3,
+                    "cover": null
+                },
+                {
+                    "id_image": 106,
+                    "id_product": 18,
+                    "position": 4,
+                    "cover": null
+                },
+                {
+                    "id_image": 107,
+                    "id_product": 18,
+                    "position": 5,
+                    "cover": null
+                },
+                {
+                    "id_image": 108,
+                    "id_product": 18,
+                    "position": 6,
+                    "cover": null
+                },
+                {
+                    "id_image": 103,
+                    "id_product": 18,
+                    "position": 1,
+                    "cover": 1
+                }
+            ],
+            "descriptions": [
+                {
+                    "id_product": 18,
+                    "id_shop": 1,
+                    "id_lang": 6,
+                    "description": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;We are proud to offer you our hi-tech original goods. &lt;em&gt;The products of our store are the real bestsellers and we have a great number of faithful customers.&lt;\/em&gt; Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store&lt;\/span&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;.&lt;\/span&gt;&lt;\/p&gt;",
+                    "description_short": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores.&lt;\/span&gt;&lt;\/p&gt;",
+                    "link_rewrite": "samsung-galaxy-s5",
+                    "meta_description": "",
+                    "meta_keywords": "",
+                    "meta_title": "",
+                    "name": "Samsung Galaxy S5",
+                    "available_now": "",
+                    "available_later": ""
+                }
+            ],
+            "manufacturer": null,
+            "sale": null,
+            "currency": [],
+            "specific_price": [
+                {
+                    "id_specific_price": 9,
+                    "id_currency": 0,
+                    "id_country": 0,
+                    "id_group": 0,
+                    "id_customer": 0,
+                    "id_product_attribute": 0,
+                    "price": "-1.000000",
+                    "from_quantity": 1,
+                    "reduction": "0.100000",
+                    "reduction_tax": 1,
+                    "reduction_type": "percentage",
+                    "from": "0000-00-00 00:00:00",
+                    "to": "0000-00-00 00:00:00"
+                }
+            ]
+        }
+    ]
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/products/new</code></p>
+<p><code>HEAD api/products/new</code></p>
+<!-- END_5ba279588bc99b2a5d15cebdcd40c4cf -->
+<!-- START_2a59ef865950d51054630128872f6b47 -->
+<h2>Get top Sales products  with limit(default: 3)</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/products/top-sales" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/products/top-sales",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "total": 0,
+    "per_page": 3,
+    "current_page": 1,
+    "last_page": 0,
+    "next_page_url": null,
+    "prev_page_url": null,
+    "from": null,
+    "to": null,
+    "data": []
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/products/top-sales</code></p>
+<p><code>HEAD api/products/top-sales</code></p>
+<!-- END_2a59ef865950d51054630128872f6b47 -->
+<!-- START_95b24a72427f6f3dce377cfcd999890a -->
+<h2>Get special products with limit(default: 3)</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/products/special-offers" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/products/special-offers",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "total": 8,
+    "per_page": 3,
+    "current_page": 1,
+    "last_page": 3,
+    "next_page_url": "http:\/\/localhostapi\/products\/special-offers?page=2",
+    "prev_page_url": null,
+    "from": 1,
+    "to": 3,
+    "data": [
+        {
+            "id_product": 1,
+            "id_supplier": 3,
+            "id_manufacturer": 2,
+            "id_category_default": 2,
+            "id_shop_default": 1,
+            "id_tax_rules_group": 1,
+            "on_sale": 1,
+            "online_only": 0,
+            "ean13": "",
+            "upc": "",
+            "ecotax": "0.000000",
+            "quantity": 0,
+            "minimal_quantity": 1,
+            "price": "130.000000",
+            "wholesale_price": "130.000000",
+            "unity": "",
+            "unit_price_ratio": "1.250000",
+            "additional_shipping_cost": "0.00",
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "width": "0.000000",
+            "height": "0.000000",
+            "depth": "0.000000",
+            "weight": "0.000000",
+            "out_of_stock": 2,
+            "quantity_discount": 0,
+            "customizable": 0,
+            "uploadable_files": 0,
+            "text_fields": 0,
+            "active": 1,
+            "redirect_type": "",
+            "id_product_redirected": 0,
+            "available_for_order": 1,
+            "available_date": "0000-00-00",
+            "condition": "new",
+            "show_price": 1,
+            "indexed": 1,
+            "visibility": "both",
+            "cache_is_pack": 0,
+            "cache_has_attachments": 0,
+            "is_virtual": 0,
+            "cache_default_attribute": 1,
+            "date_add": "2015-12-09 14:56:02",
+            "date_upd": "2015-12-09 14:56:02",
+            "advanced_stock_management": 0,
+            "pack_stock_type": 3,
+            "has_attribute": true,
+            "images": [
+                {
+                    "id_image": 2,
+                    "id_product": 1,
+                    "position": 2,
+                    "cover": null
+                },
+                {
+                    "id_image": 3,
+                    "id_product": 1,
+                    "position": 3,
+                    "cover": null
+                },
+                {
+                    "id_image": 4,
+                    "id_product": 1,
+                    "position": 4,
+                    "cover": null
+                },
+                {
+                    "id_image": 5,
+                    "id_product": 1,
+                    "position": 5,
+                    "cover": null
+                },
+                {
+                    "id_image": 6,
+                    "id_product": 1,
+                    "position": 6,
+                    "cover": null
+                },
+                {
+                    "id_image": 1,
+                    "id_product": 1,
+                    "position": 1,
+                    "cover": 1
+                }
+            ],
+            "descriptions": [
+                {
+                    "id_product": 1,
+                    "id_shop": 1,
+                    "id_lang": 6,
+                    "description": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;We are proud to offer you our hi-tech original goods. &lt;em&gt;The products of our store are the real bestsellers and we have a great number of faithful customers.&lt;\/em&gt; Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store&lt;\/span&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;.&lt;\/span&gt;&lt;\/p&gt;",
+                    "description_short": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;\/span&gt;&lt;\/p&gt;",
+                    "link_rewrite": "alcatel-one-fierce-prepaid-phone",
+                    "meta_description": "",
+                    "meta_keywords": "",
+                    "meta_title": "",
+                    "name": "Alcatel One Fierce Prepaid Phone ",
+                    "available_now": "",
+                    "available_later": ""
+                }
+            ],
+            "manufacturer": {
+                "id_manufacturer": 1,
+                "name": "Samsung",
+                "date_add": "2015-12-09 14:56:02",
+                "date_upd": "2017-01-26 14:54:35"
+            },
+            "sale": null,
+            "currency": [
+                {
+                    "name": "Danish krone",
+                    "iso_code": "DKK",
+                    "iso_code_num": "208",
+                    "sign": "kr",
+                    "blank": 1,
+                    "format": 2,
+                    "decimals": 1,
+                    "conversion_rate": "1.000000"
+                }
+            ],
+            "specific_price": [
+                {
+                    "id_specific_price": 1,
+                    "id_currency": 0,
+                    "id_country": 0,
+                    "id_group": 0,
+                    "id_customer": 0,
+                    "id_product_attribute": 0,
+                    "price": "-1.000000",
+                    "from_quantity": 1,
+                    "reduction": "0.200000",
+                    "reduction_tax": 1,
+                    "reduction_type": "percentage",
+                    "from": "0000-00-00 00:00:00",
+                    "to": "0000-00-00 00:00:00"
+                }
+            ]
+        },
+        {
+            "id_product": 2,
+            "id_supplier": 1,
+            "id_manufacturer": 8,
+            "id_category_default": 2,
+            "id_shop_default": 1,
+            "id_tax_rules_group": 0,
+            "on_sale": 1,
+            "online_only": 0,
+            "ean13": "",
+            "upc": "",
+            "ecotax": "0.000000",
+            "quantity": 0,
+            "minimal_quantity": 1,
+            "price": "150.000000",
+            "wholesale_price": "150.000000",
+            "unity": "",
+            "unit_price_ratio": "1.250000",
+            "additional_shipping_cost": "0.00",
+            "reference": "00102",
+            "supplier_reference": "",
+            "location": "",
+            "width": "0.000000",
+            "height": "0.000000",
+            "depth": "0.000000",
+            "weight": "0.000000",
+            "out_of_stock": 2,
+            "quantity_discount": 0,
+            "customizable": 0,
+            "uploadable_files": 0,
+            "text_fields": 0,
+            "active": 1,
+            "redirect_type": "404",
+            "id_product_redirected": 0,
+            "available_for_order": 1,
+            "available_date": "0000-00-00",
+            "condition": "new",
+            "show_price": 1,
+            "indexed": 1,
+            "visibility": "both",
+            "cache_is_pack": 0,
+            "cache_has_attachments": 0,
+            "is_virtual": 0,
+            "cache_default_attribute": 51,
+            "date_add": "2015-12-09 14:56:03",
+            "date_upd": "2017-01-30 11:31:53",
+            "advanced_stock_management": 0,
+            "pack_stock_type": 3,
+            "has_attribute": true,
+            "images": [
+                {
+                    "id_image": 8,
+                    "id_product": 2,
+                    "position": 2,
+                    "cover": null
+                },
+                {
+                    "id_image": 9,
+                    "id_product": 2,
+                    "position": 3,
+                    "cover": null
+                },
+                {
+                    "id_image": 10,
+                    "id_product": 2,
+                    "position": 4,
+                    "cover": null
+                },
+                {
+                    "id_image": 11,
+                    "id_product": 2,
+                    "position": 5,
+                    "cover": null
+                },
+                {
+                    "id_image": 12,
+                    "id_product": 2,
+                    "position": 6,
+                    "cover": null
+                },
+                {
+                    "id_image": 7,
+                    "id_product": 2,
+                    "position": 1,
+                    "cover": 1
+                }
+            ],
+            "descriptions": [
+                {
+                    "id_product": 2,
+                    "id_shop": 1,
+                    "id_lang": 6,
+                    "description": "&lt;p&gt;&lt;strong&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;\/span&gt;&lt;\/p&gt;\n&lt;p&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.&lt;\/span&gt;&lt;\/p&gt;\n&lt;p&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt;We are proud to offer you our hi-tech original goods. &lt;em&gt;The products of our store are the real bestsellers and we have a great number of faithful customers.&lt;\/em&gt; Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.&lt;\/span&gt;&lt;\/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store&lt;\/span&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt;.&lt;\/span&gt;&lt;\/p&gt;",
+                    "description_short": "&lt;p&gt;&lt;strong&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span xml:lang=\"en-us\" lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores.&lt;\/span&gt;&lt;\/p&gt;",
+                    "link_rewrite": "alcatel-one-touch-fire",
+                    "meta_description": "",
+                    "meta_keywords": "",
+                    "meta_title": "",
+                    "name": "Alcatel One Touch Fire",
+                    "available_now": "",
+                    "available_later": ""
+                }
+            ],
+            "manufacturer": null,
+            "sale": null,
+            "currency": [],
+            "specific_price": [
+                {
+                    "id_specific_price": 13,
+                    "id_currency": 0,
+                    "id_country": 0,
+                    "id_group": 0,
+                    "id_customer": 0,
+                    "id_product_attribute": 0,
+                    "price": "-1.000000",
+                    "from_quantity": 1,
+                    "reduction": "10.000000",
+                    "reduction_tax": 0,
+                    "reduction_type": "amount",
+                    "from": "0000-00-00 00:00:00",
+                    "to": "0000-00-00 00:00:00"
+                },
+                {
+                    "id_specific_price": 14,
+                    "id_currency": 0,
+                    "id_country": 0,
+                    "id_group": 0,
+                    "id_customer": 0,
+                    "id_product_attribute": 0,
+                    "price": "-1.000000",
+                    "from_quantity": 5,
+                    "reduction": "10.000000",
+                    "reduction_tax": 1,
+                    "reduction_type": "amount",
+                    "from": "0000-00-00 00:00:00",
+                    "to": "0000-00-00 00:00:00"
+                }
+            ]
+        },
+        {
+            "id_product": 3,
+            "id_supplier": 3,
+            "id_manufacturer": 7,
+            "id_category_default": 3,
+            "id_shop_default": 1,
+            "id_tax_rules_group": 1,
+            "on_sale": 1,
+            "online_only": 0,
+            "ean13": "",
+            "upc": "",
+            "ecotax": "0.000000",
+            "quantity": 0,
+            "minimal_quantity": 1,
+            "price": "320.000000",
+            "wholesale_price": "320.000000",
+            "unity": "",
+            "unit_price_ratio": "1.250000",
+            "additional_shipping_cost": "0.00",
+            "reference": "00103",
+            "supplier_reference": "",
+            "location": "",
+            "width": "0.000000",
+            "height": "0.000000",
+            "depth": "0.000000",
+            "weight": "0.000000",
+            "out_of_stock": 2,
+            "quantity_discount": 0,
+            "customizable": 0,
+            "uploadable_files": 0,
+            "text_fields": 0,
+            "active": 1,
+            "redirect_type": "",
+            "id_product_redirected": 0,
+            "available_for_order": 1,
+            "available_date": "0000-00-00",
+            "condition": "new",
+            "show_price": 1,
+            "indexed": 1,
+            "visibility": "both",
+            "cache_is_pack": 0,
+            "cache_has_attachments": 0,
+            "is_virtual": 0,
+            "cache_default_attribute": 111,
+            "date_add": "2015-12-09 14:56:03",
+            "date_upd": "2017-01-30 11:21:11",
+            "advanced_stock_management": 0,
+            "pack_stock_type": 3,
+            "has_attribute": true,
+            "images": [
+                {
+                    "id_image": 14,
+                    "id_product": 3,
+                    "position": 2,
+                    "cover": null
+                },
+                {
+                    "id_image": 15,
+                    "id_product": 3,
+                    "position": 3,
+                    "cover": null
+                },
+                {
+                    "id_image": 16,
+                    "id_product": 3,
+                    "position": 4,
+                    "cover": null
+                },
+                {
+                    "id_image": 17,
+                    "id_product": 3,
+                    "position": 5,
+                    "cover": null
+                },
+                {
+                    "id_image": 18,
+                    "id_product": 3,
+                    "position": 6,
+                    "cover": null
+                },
+                {
+                    "id_image": 13,
+                    "id_product": 3,
+                    "position": 1,
+                    "cover": 1
+                }
+            ],
+            "descriptions": [
+                {
+                    "id_product": 3,
+                    "id_shop": 1,
+                    "id_lang": 6,
+                    "description": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;We are proud to offer you our hi-tech original goods. &lt;em&gt;The products of our store are the real bestsellers and we have a great number of faithful customers.&lt;\/em&gt; Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.&lt;\/span&gt;&lt;\/p&gt;\r\n&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;strong&gt;Our phones are totally&lt;\/strong&gt; safe for your health because they have passed all tests without any failure. &lt;em&gt;So don’t waste your time and purchase&lt;\/em&gt; our products because our company cares about their clients. We often provide different promos and you can save some money in our store&lt;\/span&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;.&lt;\/span&gt;&lt;\/p&gt;",
+                    "description_short": "&lt;p&gt;&lt;strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt;The main reason&lt;\/span&gt;&lt;\/strong&gt;&lt;span lang=\"en-us\" xml:lang=\"en-us\"&gt; of our success is that our commodities are the unique combination of original design and numerous useful options. &lt;strong&gt;We can&lt;\/strong&gt; satisfy most whimsical clients because we have a largest choice among the competitive stores. &lt;\/span&gt;&lt;\/p&gt;",
+                    "link_rewrite": "apple-iphone-5c",
+                    "meta_description": "",
+                    "meta_keywords": "",
+                    "meta_title": "",
+                    "name": "Apple iPhone 5c",
+                    "available_now": "",
+                    "available_later": ""
+                }
+            ],
+            "manufacturer": null,
+            "sale": null,
+            "currency": [],
+            "specific_price": [
+                {
+                    "id_specific_price": 3,
+                    "id_currency": 0,
+                    "id_country": 0,
+                    "id_group": 0,
+                    "id_customer": 0,
+                    "id_product_attribute": 0,
+                    "price": "-1.000000",
+                    "from_quantity": 1,
+                    "reduction": "0.200000",
+                    "reduction_tax": 1,
+                    "reduction_type": "percentage",
+                    "from": "0000-00-00 00:00:00",
+                    "to": "0000-00-00 00:00:00"
+                }
+            ]
+        }
+    ]
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/products/special-offers</code></p>
+<p><code>HEAD api/products/special-offers</code></p>
+<!-- END_95b24a72427f6f3dce377cfcd999890a -->
+<h1>Users</h1>
+<!-- START_638687f1aca2f1e69b360d1516c7c1f9 -->
+<h2>Register a new user.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/user/register" \
+-H "Accept: application/json" \
+    -d "id_gender"="2" \
+    -d "id_lang"="2" \
+    -d "firstname"="vel" \
+    -d "lastname"="vel" \
+    -d "email"="njacobson@example.com" \
+    -d "passwd"="vel" \
+    -d "newsletter"="1" \
+    -d "birthday"="2008-04-29" \
+</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/user/register",
+    "method": "POST",
+    "data": {
+        "id_gender": "2",
+        "id_lang": "2",
+        "firstname": "vel",
+        "lastname": "vel",
+        "email": "njacobson@example.com",
+        "passwd": "vel",
+        "newsletter": true,
+        "birthday": "2008-04-29"
+},
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/user/register</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id_gender</td>
+<td>string</td>
+<td>required</td>
+<td><code>1</code> or <code>2</code></td>
+</tr>
+<tr>
+<td>id_lang</td>
+<td>string</td>
+<td>optional</td>
+<td><code>1</code> or <code>2</code></td>
+</tr>
+<tr>
+<td>firstname</td>
+<td>string</td>
+<td>required</td>
+</tr>
+<tr>
+<td>lastname</td>
+<td>string</td>
+<td>required</td>
+</tr>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+</tr>
+<tr>
+<td>passwd</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>6</code></td>
+</tr>
+<tr>
+<td>newsletter</td>
+<td>boolean</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>birthday</td>
+<td>date</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<!-- END_638687f1aca2f1e69b360d1516c7c1f9 -->
+<!-- START_00f7d0be1226887c1ffa251c97c8740a -->
+<h2>Update user</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/user" \
+-H "Accept: application/json" \
+    -d "id_gender"="2" \
+    -d "id_lang"="2" \
+    -d "firstname"="quo" \
+    -d "lastname"="quo" \
+    -d "email"="marquise77@example.net" \
+    -d "passwd"="quo" \
+    -d "newsletter"="1" \
+    -d "birthday"="2003-07-19" \
+</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/user",
+    "method": "PUT",
+    "data": {
+        "id_gender": "2",
+        "id_lang": "2",
+        "firstname": "quo",
+        "lastname": "quo",
+        "email": "marquise77@example.net",
+        "passwd": "quo",
+        "newsletter": true,
+        "birthday": "2003-07-19"
+},
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/user</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id_gender</td>
+<td>string</td>
+<td>required</td>
+<td><code>1</code> or <code>2</code></td>
+</tr>
+<tr>
+<td>id_lang</td>
+<td>string</td>
+<td>optional</td>
+<td><code>1</code> or <code>2</code></td>
+</tr>
+<tr>
+<td>firstname</td>
+<td>string</td>
+<td>required</td>
+</tr>
+<tr>
+<td>lastname</td>
+<td>string</td>
+<td>required</td>
+</tr>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+</tr>
+<tr>
+<td>passwd</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>6</code></td>
+</tr>
+<tr>
+<td>newsletter</td>
+<td>boolean</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>birthday</td>
+<td>date</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<!-- END_00f7d0be1226887c1ffa251c97c8740a -->
+<h1>general</h1>
+<!-- START_19c429c617302ce2418b9014cd6d6f47 -->
+<h2>api/test/conf</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi//api/test/conf" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi//api/test/conf",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">[
+    {
+        "id_address": 7,
+        "id_country": 21,
+        "id_state": 2,
+        "id_customer": 4,
+        "id_manufacturer": 0,
+        "id_supplier": 0,
+        "id_warehouse": 0,
+        "alias": "Min adresse",
+        "company": "",
+        "lastname": "Sha",
+        "firstname": "Igor",
+        "address1": "фывйца",
+        "address2": "",
+        "postcode": "23123",
+        "city": "фыфыв",
+        "other": "",
+        "phone": "",
+        "phone_mobile": "12312312",
+        "vat_number": "",
+        "dni": "",
+        "date_add": "2017-01-04 11:39:42",
+        "date_upd": "2017-01-04 11:39:42",
+        "active": 1,
+        "deleted": 0,
+        "country": {
+            "id_country": 21,
+            "id_zone": 2,
+            "id_currency": 0,
+            "iso_code": "US",
+            "call_prefix": 1,
+            "active": 0,
+            "contains_states": 1,
+            "need_identification_number": 0,
+            "need_zip_code": 1,
+            "zip_code_format": "NNNNN",
+            "display_tax_label": 0,
+            "descriptions": [
+                {
+                    "id_country": 21,
+                    "id_lang": 6,
+                    "name": "United States"
+                }
+            ]
+        },
+        "state": {
+            "id_state": 2,
+            "id_country": 21,
+            "id_zone": 2,
+            "name": "Alaska",
+            "iso_code": "AK",
+            "tax_behavior": 0,
+            "active": 1
+        }
+    }
+]</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/test/conf</code></p>
+<p><code>HEAD api/test/conf</code></p>
+<!-- END_19c429c617302ce2418b9014cd6d6f47 -->
+      </div>
+      <div class="dark-box">
+                        <div class="lang-selector">
+                                    <a href="#" data-language-name="bash">bash</a>
+                                    <a href="#" data-language-name="javascript">javascript</a>
+                              </div>
+                </div>
+    </div>
+  </body>
+</html>

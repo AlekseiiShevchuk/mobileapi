@@ -14,10 +14,10 @@ class Product extends \Eloquent
 {
     protected $table = 'clk_1d21ac51df_product';
     protected $primaryKey = 'id_product';
+    const CREATED_AT = 'date_add';
+    const UPDATED_AT = 'date_upd';
 
     protected $hidden = [
-        'date_add',
-        'date_upd',
         'attribute'
     ];
 
@@ -161,7 +161,7 @@ class Product extends \Eloquent
      * @param int $pagination
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public static function scopeSpecialOffers($query, $pagination)
+    public function scopeSpecialOffers($query, $pagination)
     {
         return $query->whereHas('specific_price')
             ->paginate($pagination);

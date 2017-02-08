@@ -10,3 +10,7 @@ Homestead.yaml
 /storage/oauth-private.key
 /storage/oauth-public.key
 /.env
+/storage/framework/cache
+/app/Guest.php
+/app/Http/Controllers/TestController.php
+/composer.phar

@@ -12,5 +12,7 @@ class ProductAttribute extends \Eloquent
 {
     protected $primaryKey = 'id_product_attribute';
     protected $table = 'clk_1d21ac51df_product_attribute';
+    public $timestamps = false;
+
 
 }

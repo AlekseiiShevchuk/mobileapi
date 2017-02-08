@@ -7,6 +7,9 @@ use App\Http\Requests\UserUpdateRequest;
 use App\Model\User;
 use Illuminate\Support\Facades\Auth;
 
+/**
+ * @resource Users
+ */
 class UserController extends Controller
 {
     /**
@@ -36,7 +39,7 @@ class UserController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update user
      *
      * @param  UserUpdateRequest $request
      * @return \Illuminate\Http\Response

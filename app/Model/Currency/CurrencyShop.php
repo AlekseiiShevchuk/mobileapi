@@ -15,6 +15,6 @@ class CurrencyShop extends \Eloquent
 {
     protected $table = 'clk_1d21ac51df_currency_shop';
     protected $primaryKey = 'id_currency';
-
+    public $timestamps = false;
 
 }

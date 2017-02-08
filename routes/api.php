@@ -28,14 +28,18 @@ Route::get('/user', function () {
 })->middleware(['auth:api']);
 Route::post('/user/register','UserController@register');
 Route::put('/user','UserController@update')->middleware(['auth:api']);
-Route::get('/guest', 'UserController@guest');
+//Route::get('/guest', 'UserController@guest');
 ////////// Category
-Route::get('/addresses/get-countries', 'AddressController@getCountriesList');
-Route::get('/addresses', 'AddressController@getAuthUserAddresses')->middleware('auth:api');
+Route::get('/address/countries', 'AddressController@getCountriesList');
+Route::get('/address/countries/{country}/states', 'AddressController@getStateList')->where('country', '[0-9]+');
+
+Route::get('/addresses', 'AddressController@getUserAddresses')->middleware('auth:api');
 Route::post('/addresses', 'AddressController@store')->middleware('auth:api');
 Route::put('/addresses/{address}', 'AddressController@update')->middleware('auth:api');
 Route::delete('/addresses/{address}', 'AddressController@destroy')->middleware('auth:api');
+////// Carrier
 
+Route::get('/carrier/zone/{zoneId}','CarrierController@getByZone')->where('zoneId','[0-9]+');
 ////// Test
 //Route::get('/test/user','TestController@test');
-//Route::get('/test/conf','TestController@conf');
+Route::get('/test/conf','TestController@conf');

@@ -24,7 +24,8 @@ class AddressStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'id_country' => 'required|integer|exists:clk_1d21ac51df_country,id_country',
+            'id_country' => 'required|integer',
+            'id_state'=>'sometimes|integer',
             'alias' => 'required|max:32',
             'company' => 'sometimes|max:64',
             'lastname' => 'required|max:32',

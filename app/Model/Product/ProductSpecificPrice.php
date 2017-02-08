@@ -12,6 +12,8 @@ class ProductSpecificPrice extends \Eloquent
 {
     protected $primaryKey = 'id_specific_price';
     protected $table = 'clk_1d21ac51df_specific_price';
+    public $timestamps = false;
+
 
     protected $hidden = [
         'id_specific_price_rule',
@@ -19,6 +21,5 @@ class ProductSpecificPrice extends \Eloquent
         'id_product',
         'id_shop',
         'id_shop_group',
-
     ];
 }

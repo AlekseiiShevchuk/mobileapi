@@ -14,6 +14,8 @@ class User extends Authenticatable
     protected $table = 'clk_1d21ac51df_customer';
     protected $primaryKey = 'id_customer';
     public $timestamps = false;
+    const CREATED_AT = 'date_add';
+    const UPDATED_AT = 'date_upd';
 
     /**
      * The attributes that are mass assignable.
@@ -34,8 +36,6 @@ class User extends Authenticatable
         'website',
         'company',
         'id_lang',
-        'date_add',
-        'date_upd',
     ];
 
     /**
@@ -50,6 +50,11 @@ class User extends Authenticatable
 
     public function validateForPassportPasswordGrant($password)
     {
-        return (md5(self::_COOKIE_KEY_.$password) == $this->passwd);
+        return (md5(self::_COOKIE_KEY_ . $password) == $this->passwd);
+    }
+
+    public function addresses()
+    {
+        $this->hasMany(Address::class, 'id_customer');
     }
 }

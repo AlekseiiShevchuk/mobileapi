@@ -6,14 +6,16 @@ class CategoryLang extends \Eloquent
 {
     protected $table = 'clk_1d21ac51df_category_lang';
     protected $primaryKey = 'id_category';
+    public $timestamps = false;
+
     protected $appends = [
         'image'
     ];
 
     public function getImageAttribute()
     {
-        return $_SERVER['SERVER_NAME'].'/c/' . $this->id_category . '-tm_category_default/' .
-            $this->link_rewrite . '.jpg';
+        return $_SERVER['SERVER_NAME'] . '/c/' . $this->id_category . '-tm_category_default/' .
+        $this->link_rewrite . '.jpg';
     }
 
 }
