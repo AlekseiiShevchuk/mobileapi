@@ -61,8 +61,8 @@ class AddressController extends Controller
         }
         $address->customer()->associate(Auth::user());
         $address->save();
-        return $address;
 
+        return $address;
     }
 
     /**
@@ -70,7 +70,7 @@ class AddressController extends Controller
      *
      * @param  AddressUpdateRequest $request
      * @param  Address $address
-     * @return \Illuminate\Http\Response
+     * @return Address
      */
     public function update(AddressUpdateRequest $request, Address $address)
     {
@@ -81,6 +81,7 @@ class AddressController extends Controller
             $address->state()->associate($request->get('id_state'));
         }
         $address->save();
+
         return $address;
     }
 
@@ -95,6 +96,7 @@ class AddressController extends Controller
     {
         $address->deleted = 1;
         $address->save();
+
         return response('', 204);
     }
 }

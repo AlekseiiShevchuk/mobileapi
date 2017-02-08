@@ -52,6 +52,16 @@ class Address extends \Eloquent
         return $this->belongsTo(AddressState::class, 'id_state');
     }
 
+    public function delivery_carts()
+    {
+        return $this->hasMany(Cart::class, 'id_address_delivery');
+    }
+
+    public function invoice_carts()
+    {
+        return $this->hasMany(Cart::class, 'id_address_invoice');
+    }
+
     /**
      * Scope a query.
      *

@@ -37,8 +37,14 @@ Route::post('/addresses', 'AddressController@store')->middleware('auth:api');
 Route::put('/addresses/{address}', 'AddressController@update')->middleware('auth:api');
 Route::delete('/addresses/{address}', 'AddressController@destroy')->middleware('auth:api');
 ////// Carrier
-
 Route::get('/carrier/zone/{zoneId}','CarrierController@getByZone')->where('zoneId','[0-9]+');
+////// Cart
+Route::get('/cart','CartController@get')->middleware('auth:api');
+Route::post('/cart','CartController@createOrUpdate')->middleware('auth:api');
+Route::put('/cart','CartController@createOrUpdate')->middleware('auth:api');
+Route::post('/cart/product/{product}','CartController@addProduct')->middleware('auth:api')->where('product','[0-9]+');
+Route::delete('/cart/product/{product}','CartController@removeProduct')->middleware('auth:api')->where('product','[0-9]+');
+
 ////// Test
 //Route::get('/test/user','TestController@test');
 Route::get('/test/conf','TestController@conf');

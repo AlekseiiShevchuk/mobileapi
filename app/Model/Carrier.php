@@ -37,6 +37,11 @@ class Carrier extends \Eloquent
         return $this->hasMany(CarrierZone::class, 'id_carrier');
     }
 
+    public function carts()
+    {
+        return $this->hasMany(Cart::class, 'id_carrier');
+    }
+
     /**
      * Scope a query.
      *
@@ -49,8 +54,8 @@ class Carrier extends \Eloquent
         return $query->whereHas('zones', function ($query) use ($zoneId) {
             $query->where('id_zone', '=', $zoneId);
         })
-            ->where('active','=',1)
-            ->where('deleted','=',0);
+            ->where('active', '=', 1)
+            ->where('deleted', '=', 0);
     }
 
 }

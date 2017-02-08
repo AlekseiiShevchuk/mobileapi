@@ -45,7 +45,14 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'passwd',
+        'cart',
+        'secure_key',
+        'date_add',
+        'data_upd'
         //'remember_token',
+    ];
+    protected $appends = [
+        'has_cart',
     ];
 
     public function validateForPassportPasswordGrant($password)
@@ -55,6 +62,16 @@ class User extends Authenticatable
 
     public function addresses()
     {
-        $this->hasMany(Address::class, 'id_customer');
+        return $this->hasMany(Address::class, 'id_customer');
+    }
+
+    public function cart()
+    {
+        return $this->hasOne(Cart::class, 'id_customer');
+    }
+
+    public function getHasCartAttribute()
+    {
+        return !empty($this->cart);
     }
 }
