@@ -32,7 +32,6 @@ Route::put('/user','UserController@update')->middleware(['auth:api']);
 ////////// Category
 Route::get('/address/countries', 'AddressController@getCountriesList');
 Route::get('/address/countries/{country}/states', 'AddressController@getStateList')->where('country', '[0-9]+');
-
 Route::get('/addresses', 'AddressController@getUserAddresses')->middleware('auth:api');
 Route::post('/addresses', 'AddressController@store')->middleware('auth:api');
 Route::put('/addresses/{address}', 'AddressController@update')->middleware('auth:api');
