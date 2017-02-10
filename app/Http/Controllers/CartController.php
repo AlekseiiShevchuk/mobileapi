@@ -91,7 +91,6 @@ class CartController extends Controller
      * Remove product from cart
      * @param Product $product
      * @return mixed
-     * @throws \Exception
      */
     public function removeProduct(Product $product)
     {
@@ -104,6 +103,20 @@ class CartController extends Controller
         $cart_product->delete();
 
         return $cart;
+    }
+
+    /**
+     * Redirect to order
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function redirectUrlOrder()
+    {
+        return \Redirect::away('http://' . $_SERVER['HTTP_HOST'] . '/index.php?' .
+            http_build_query([
+                'controller' => 'auth',
+                'back' => 'order-opc'
+            ])
+        );
     }
 
 

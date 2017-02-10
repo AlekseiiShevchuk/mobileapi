@@ -951,6 +951,34 @@ $.ajax(settings).done(function (response) {
 <h3>HTTP Request</h3>
 <p><code>DELETE api/cart/product/{product}</code></p>
 <!-- END_183343e9b87e07c574da06962fda9627 -->
+<!-- START_68c2190880f7fcee69fe731cb9eeeca6 -->
+<h2>Redirect to order</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://laravel.pres/mobileapi/api/cart/redirect" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi/api/cart/redirect",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/cart/redirect</code></p>
+<p><code>HEAD api/cart/redirect</code></p>
+<!-- END_68c2190880f7fcee69fe731cb9eeeca6 -->
 <h1>Category</h1>
 <!-- START_51e581cc9a1f9ee73cc207ec4e67e8d4 -->
 <h2>Root Menu Category</h2>
@@ -2979,7 +3007,7 @@ $.ajax(settings).done(function (response) {
     -d "email"="marquise77@example.net" \
     -d "passwd"="quo" \
     -d "newsletter"="1" \
-    -d "birthday"="2003-07-19" \
+    -d "birthday"="2003-07-20" \
 </code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
@@ -2994,7 +3022,7 @@ $.ajax(settings).done(function (response) {
         "email": "marquise77@example.net",
         "passwd": "quo",
         "newsletter": true,
-        "birthday": "2003-07-19"
+        "birthday": "2003-07-20"
 },
     "headers": {
         "accept": "application/json"

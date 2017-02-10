@@ -43,7 +43,7 @@ Route::get('/cart','CartController@get')->middleware('auth:api');
 Route::put('/cart','CartController@update')->middleware('auth:api');
 Route::post('/cart/product/{product}','CartController@addProduct')->middleware('auth:api')->where('product','[0-9]+');
 Route::delete('/cart/product/{product}','CartController@removeProduct')->middleware('auth:api')->where('product','[0-9]+');
-
+Route::get('/cart/redirect','CartController@redirectUrlOrder');
 ////// Test
 //Route::get('/test/user','TestController@test');
 Route::get('/test/conf','TestController@conf');

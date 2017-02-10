@@ -859,6 +859,45 @@ $.ajax(settings).done(function (response) {
 
 
 <!-- END_183343e9b87e07c574da06962fda9627 -->
+<!-- START_68c2190880f7fcee69fe731cb9eeeca6 -->
+## Redirect to order
+
+> Example request:
+
+```bash
+curl "http://laravel.pres/mobileapi/api/cart/redirect" \
+-H "Accept: application/json"
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi/api/cart/redirect",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+> Example response:
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/cart/redirect`
+
+`HEAD api/cart/redirect`
+
+
+<!-- END_68c2190880f7fcee69fe731cb9eeeca6 -->
 #Category
 <!-- START_51e581cc9a1f9ee73cc207ec4e67e8d4 -->
 ## Root Menu Category
@@ -2941,7 +2980,7 @@ curl "http://laravel.pres/mobileapi/api/user" \
     -d "email"="marquise77@example.net" \
     -d "passwd"="quo" \
     -d "newsletter"="1" \
-    -d "birthday"="2003-07-19" \
+    -d "birthday"="2003-07-20" \
 
 ```
 
@@ -2959,7 +2998,7 @@ var settings = {
         "email": "marquise77@example.net",
         "passwd": "quo",
         "newsletter": true,
-        "birthday": "2003-07-19"
+        "birthday": "2003-07-20"
 },
     "headers": {
         "accept": "application/json"
