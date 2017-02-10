@@ -18,6 +18,6 @@ class Configuration extends \Eloquent
 
     public static function scopeGetValue($query, $key)
     {
-        return $query->select(['value'])->where('name', '=', $key)->first()->value;
+        return $query->where('name', '=', $key)->first()->value;
     }
 }

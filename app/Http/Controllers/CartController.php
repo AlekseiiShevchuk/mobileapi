@@ -28,7 +28,15 @@ class CartController extends Controller
      */
     public function get()
     {
-        return \Auth::user()->cart;
+        if (!\Auth::user()->cart) {
+            $cart = new Cart();
+            $cart->customer()->associate(\Auth::user()->id_customer);
+        } else {
+            $cart = \Auth::user()->cart;
+        }
+        $cart->save();
+        return $cart;
+
     }
 
     /**
@@ -36,27 +44,25 @@ class CartController extends Controller
      * @param CartRequest $request
      * @return Cart
      */
-    public function createOrUpdate(CartRequest $request)
+    public function update(CartRequest $request)
     {
-        if (!\Auth::user()->cart) {
-            $cart = new Cart();
-            $cart->customer()->associate(\Auth::user()->id_customer);
-        } else {
-            $cart = \Auth::user()->cart;
-        }
+        $cart = $this->get();
         /** @var Cart $cart */
-        $cart->address_delivery()->associate($request->get('id_address_delivery'));
+        if (!$request->has('id_address_invoice') && !$cart->id_address_invoice) {
+            $cart->address_delivery()->associate($request->get('id_address_delivery'));
+        }
 
         if (!$request->has('id_address_invoice') && !$cart->id_address_invoice) {
             $cart->address_invoice()->associate($request->get('id_address_delivery'));
         }
+
         if (!$request->has('id_carrier') && !$cart->id_carrier) {
             $cart->carrier()->associate(Configuration::getValue('PS_CARRIER_DEFAULT'));
         }
+
         if (!$cart->secure_key) {
             $cart->secure_key = \Auth::user()->secure_key;
         }
-        $cart->delivery_option = serialize([$cart->id_address_delivery => $cart->id_carrier . ',']);
         $cart->save();
 
         return $cart;
@@ -70,7 +76,7 @@ class CartController extends Controller
      */
     public function addProduct(CartProductRequest $request, Product $product)
     {
-        $cart = \Auth::user()->cart;
+        $cart = $this->get();
 
         $cart_product = Cart\CartProduct::firstOrCreate([
             'id_cart' => (int)$cart->id_cart,
@@ -89,15 +95,15 @@ class CartController extends Controller
      */
     public function removeProduct(Product $product)
     {
-        $cart = \Auth::user()->cart;
+        $cart = $this->get();
 
         $cart_product = Cart\CartProduct::where([
             'id_cart' => (int)$cart->id_cart,
             'id_product' => (int)$product->id_product
         ]);
         $cart_product->delete();
-        return $cart;
 
+        return $cart;
     }
 
 

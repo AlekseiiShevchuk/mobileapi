@@ -31,7 +31,7 @@ class CartRequest extends FormRequest
     public function rules()
     {
         return [
-            'id_address_delivery' => 'required|integer',
+            'id_address_delivery' => 'sometimes|integer',
             'id_address_invoice' => 'sometimes|integer',
             'id_carrier'=>'sometimes|integer'
         ];

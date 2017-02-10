@@ -815,66 +815,6 @@ $.ajax(settings).done(function (response) {
 <p><code>GET api/cart</code></p>
 <p><code>HEAD api/cart</code></p>
 <!-- END_f8bd77a3e0a5e5dc74babaca7644408d -->
-<!-- START_ffc9879f3ac5b6304e7047c50762e044 -->
-<h2>Create or update cart</h2>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl "http://laravel.pres/mobileapi/api/cart" \
--H "Accept: application/json" \
-    -d "id_address_delivery"="7" \
-    -d "id_address_invoice"="7" \
-    -d "id_carrier"="7" \
-</code></pre>
-<pre><code class="language-javascript">var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://laravel.pres/mobileapi/api/cart",
-    "method": "POST",
-    "data": {
-        "id_address_delivery": 7,
-        "id_address_invoice": 7,
-        "id_carrier": 7
-},
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});</code></pre>
-<h3>HTTP Request</h3>
-<p><code>POST api/cart</code></p>
-<h4>Parameters</h4>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Status</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id_address_delivery</td>
-<td>integer</td>
-<td>required</td>
-</tr>
-<tr>
-<td>id_address_invoice</td>
-<td>integer</td>
-<td>optional</td>
-</tr>
-<tr>
-<td>id_carrier</td>
-<td>integer</td>
-<td>optional</td>
-</tr>
-</tbody>
-</table>
-<!-- END_ffc9879f3ac5b6304e7047c50762e044 -->
 <!-- START_5e63034c6c6d60885b28e1b841c5871c -->
 <h2>Create or update cart</h2>
 <blockquote>
@@ -920,7 +860,7 @@ $.ajax(settings).done(function (response) {
 <tr>
 <td>id_address_delivery</td>
 <td>integer</td>
-<td>required</td>
+<td>optional</td>
 </tr>
 <tr>
 <td>id_address_invoice</td>
@@ -2941,7 +2881,7 @@ $.ajax(settings).done(function (response) {
     -d "email"="njacobson@example.com" \
     -d "passwd"="vel" \
     -d "newsletter"="1" \
-    -d "birthday"="2008-04-29" \
+    -d "birthday"="2008-04-30" \
 </code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
@@ -2956,7 +2896,7 @@ $.ajax(settings).done(function (response) {
         "email": "njacobson@example.com",
         "passwd": "vel",
         "newsletter": true,
-        "birthday": "2008-04-29"
+        "birthday": "2008-04-30"
 },
     "headers": {
         "accept": "application/json"

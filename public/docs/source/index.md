@@ -734,54 +734,6 @@ null
 
 
 <!-- END_f8bd77a3e0a5e5dc74babaca7644408d -->
-<!-- START_ffc9879f3ac5b6304e7047c50762e044 -->
-## Create or update cart
-
-> Example request:
-
-```bash
-curl "http://laravel.pres/mobileapi/api/cart" \
--H "Accept: application/json" \
-    -d "id_address_delivery"="7" \
-    -d "id_address_invoice"="7" \
-    -d "id_carrier"="7" \
-
-```
-
-```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://laravel.pres/mobileapi/api/cart",
-    "method": "POST",
-    "data": {
-        "id_address_delivery": 7,
-        "id_address_invoice": 7,
-        "id_carrier": 7
-},
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
-```
-
-
-### HTTP Request
-`POST api/cart`
-
-#### Parameters
-
-Parameter | Type | Status | Description
---------- | ------- | ------- | ------- | -----------
-    id_address_delivery | integer |  required  | 
-    id_address_invoice | integer |  optional  | 
-    id_carrier | integer |  optional  | 
-
-<!-- END_ffc9879f3ac5b6304e7047c50762e044 -->
 <!-- START_5e63034c6c6d60885b28e1b841c5871c -->
 ## Create or update cart
 
@@ -825,7 +777,7 @@ $.ajax(settings).done(function (response) {
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    id_address_delivery | integer |  required  | 
+    id_address_delivery | integer |  optional  | 
     id_address_invoice | integer |  optional  | 
     id_carrier | integer |  optional  | 
 
@@ -2926,7 +2878,7 @@ curl "http://laravel.pres/mobileapi/api/user/register" \
     -d "email"="njacobson@example.com" \
     -d "passwd"="vel" \
     -d "newsletter"="1" \
-    -d "birthday"="2008-04-29" \
+    -d "birthday"="2008-04-30" \
 
 ```
 
@@ -2944,7 +2896,7 @@ var settings = {
         "email": "njacobson@example.com",
         "passwd": "vel",
         "newsletter": true,
-        "birthday": "2008-04-29"
+        "birthday": "2008-04-30"
 },
     "headers": {
         "accept": "application/json"

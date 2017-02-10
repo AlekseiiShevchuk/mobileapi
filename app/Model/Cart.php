@@ -42,7 +42,9 @@ class Cart extends \Eloquent
         $this->id_address_delivery = 0;
         $this->id_address_invoice = 0;
         $this->id_customer = 0;
+        $this->id_carrier = 0;
         parent::__construct($attributes);
+        $this->delivery_option = serialize([$this->id_address_delivery => $this->id_carrier . ',']);
     }
 
     public function carrier()

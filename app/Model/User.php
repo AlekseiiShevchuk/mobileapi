@@ -13,7 +13,6 @@ class User extends Authenticatable
 
     protected $table = 'clk_1d21ac51df_customer';
     protected $primaryKey = 'id_customer';
-    public $timestamps = false;
     const CREATED_AT = 'date_add';
     const UPDATED_AT = 'date_upd';
 
@@ -68,6 +67,11 @@ class User extends Authenticatable
     public function cart()
     {
         return $this->hasOne(Cart::class, 'id_customer');
+    }
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class, 'id_customer');
     }
 
     public function getHasCartAttribute()

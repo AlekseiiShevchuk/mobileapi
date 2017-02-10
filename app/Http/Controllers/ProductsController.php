@@ -10,7 +10,6 @@ use Illuminate\Http\Request;
  * @package App\Http\Controllers
  * @resource Product
  */
-
 class ProductsController extends Controller
 {
     const DEFAULT_NEW_PRODUCTS_COUNT = 3;
@@ -42,7 +41,6 @@ class ProductsController extends Controller
         }
 
         return Product::search($search, $limit);
-
     }
 
     /**
@@ -89,7 +87,7 @@ class ProductsController extends Controller
     {
         $limit = $request->get('limit') ? $request->get('limit') : self::DEFAULT_TOP_SALES_PRODUCTS_COUNT;
 
-        return  Product::TopSales($limit);
+        return Product::TopSales($limit);
     }
 
     /**
@@ -101,6 +99,6 @@ class ProductsController extends Controller
     {
         $limit = $request->get('limit') ? $request->get('limit') : self::DEFAULT_TOP_SALES_PRODUCTS_COUNT;
 
-        return  Product::specialOffers($limit);
+        return Product::specialOffers($limit);
     }
 }
