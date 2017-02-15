@@ -26,9 +26,10 @@ Route::get('categories/{category}', 'CategoryController@getById')->where('catego
 Route::get('/user', function () {
     return Auth::user();
 })->middleware(['auth:api']);
-Route::post('/user/register','UserController@register');
-Route::put('/user','UserController@update')->middleware(['auth:api']);
+Route::post('/user/register', 'UserController@register');
+Route::put('/user', 'UserController@update')->middleware(['auth:api']);
 //Route::get('/guest', 'UserController@guest');
+
 ////////// Category
 Route::get('/address/countries', 'AddressController@getCountriesList');
 Route::get('/address/countries/{country}/states', 'AddressController@getStateList')->where('country', '[0-9]+');
@@ -36,14 +37,24 @@ Route::get('/addresses', 'AddressController@getUserAddresses')->middleware('auth
 Route::post('/addresses', 'AddressController@store')->middleware('auth:api');
 Route::put('/addresses/{address}', 'AddressController@update')->middleware('auth:api');
 Route::delete('/addresses/{address}', 'AddressController@destroy')->middleware('auth:api');
-////// Carrier
-Route::get('/carrier/zone/{zoneId}','CarrierController@getByZone')->where('zoneId','[0-9]+');
-////// Cart
-Route::get('/cart','CartController@get')->middleware('auth:api');
-Route::put('/cart','CartController@update')->middleware('auth:api');
-Route::post('/cart/product/{product}','CartController@addProduct')->middleware('auth:api')->where('product','[0-9]+');
-Route::delete('/cart/product/{product}','CartController@removeProduct')->middleware('auth:api')->where('product','[0-9]+');
-Route::get('/cart/redirect','CartController@redirectUrlOrder');
+
+////////// Carrier
+Route::get('/carrier/zone/{zoneId}', 'CarrierController@getByZone')->where('zoneId', '[0-9]+');
+
+////////// Cart
+Route::get('/cart', 'CartController@get')->middleware('auth:api');
+Route::put('/cart', 'CartController@update')->middleware('auth:api');
+Route::post('/cart/product/{product}', 'CartController@addProduct')->middleware('auth:api')->where('product', '[0-9]+');
+Route::delete('/cart/product/{product}', 'CartController@removeProduct')->middleware('auth:api')->where('product', '[0-9]+');
+Route::get('/cart/redirect', 'CartController@redirectUrlOrder');
+
+////////// Blog
+Route::get('/blog/categories', 'BlogCategoryController@home');
+Route::get('/blog/categories/{category}', 'BlogCategoryController@getById')->where('category', '[0-9]+');
+Route::get('/blog/categories/{categoryId}/posts', 'BlogPostController@getPostsByCategory')->where('categoryId', '[0-9]+');
+Route::get('/blog/posts', 'BlogPostController@getNewPosts');
+Route::get('/blog/posts/{post}', 'BlogPostController@getById')->where('post', '[0-9]+');
+
 ////// Test
 //Route::get('/test/user','TestController@test');
-Route::get('/test/conf','TestController@conf');
+Route::get('/test/conf', 'TestController@conf');

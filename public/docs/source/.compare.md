@@ -342,6 +342,221 @@ $.ajax(settings).done(function (response) {
 
 
 <!-- END_e5d3d7a19170fe1ef6901a6ddf8eaeae -->
+#Blog Category
+<!-- START_33a1f9a00c004612c7e741bea9de4fbc -->
+## Root Menu Category
+
+> Example request:
+
+```bash
+curl "http://laravel.pres/mobileapi/api/blog/categories" \
+-H "Accept: application/json"
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi/api/blog/categories",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+> Example response:
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/blog/categories`
+
+`HEAD api/blog/categories`
+
+
+<!-- END_33a1f9a00c004612c7e741bea9de4fbc -->
+<!-- START_3d58eaacc0ea4d32635d97cece61a554 -->
+## Get category with subcategory(depth)
+
+> Example request:
+
+```bash
+curl "http://laravel.pres/mobileapi/api/blog/categories/{category}" \
+-H "Accept: application/json"
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi/api/blog/categories/{category}",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+> Example response:
+
+```json
+{
+    "id_smart_blog_category": 1,
+    "position": "0",
+    "desc_limit": "0",
+    "has_children": false,
+    "count_posts": 4,
+    "descriptions": [
+        {
+            "id_smart_blog_category": 1,
+            "id_lang": 6,
+            "meta_title": "Ullamcorper erat",
+            "meta_keyword": null,
+            "meta_description": null,
+            "description": "<p><strong>Vivamus vitae laoreet erat<\/strong>, eget egestas est. Donec at auctor arcu, at suscipit orci. Quisque vel risus odio. In porttitor, neque et cursus interdum, lacus felis scelerisque risus, id euismod sapien lorem et tortor. Curabitur augue sem, lobortis vitae sapien sit amet, tempus posuere sapien. Aenean ut felis a orci volutpat maximus quis lobortis sem. <span style=\"text-decoration: line-through;\">Cum sociis natoque penatibus et magnis<\/span> dis parturient montes, nascetur ridiculus mus. Sed felis tortor, tempor ut mattis a, commodo at diam. Nullam nunc lorem, ornare id magna vitae, lobortis lacinia magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris in aliquet sem, sit amet placerat erat. Maecenas non tellus rutrum, eleifend diam eget, eleifend massa. Donec luctus sapien justo, <span style=\"text-decoration: underline;\"><em>eget tincidunt tellus molestie ut<\/em><\/span>. Mauris in pharetra eros, eu hendrerit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>",
+            "link_rewrite": "ullamcorper-erat"
+        }
+    ],
+    "children": []
+}
+```
+
+### HTTP Request
+`GET api/blog/categories/{category}`
+
+`HEAD api/blog/categories/{category}`
+
+
+<!-- END_3d58eaacc0ea4d32635d97cece61a554 -->
+#Blog Post
+<!-- START_1a7850234fef6fbff9ce49c8d6e3c1d5 -->
+## Get posts by Category  with limit(default: 5)
+
+> Example request:
+
+```bash
+curl "http://laravel.pres/mobileapi/api/blog/categories/{categoryId}/posts" \
+-H "Accept: application/json"
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi/api/blog/categories/{categoryId}/posts",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+> Example response:
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/blog/categories/{categoryId}/posts`
+
+`HEAD api/blog/categories/{categoryId}/posts`
+
+
+<!-- END_1a7850234fef6fbff9ce49c8d6e3c1d5 -->
+<!-- START_1f0602d1824b13075c6d208836bbde39 -->
+## Get posts with limit(default: 5)
+
+> Example request:
+
+```bash
+curl "http://laravel.pres/mobileapi/api/blog/posts" \
+-H "Accept: application/json"
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi/api/blog/posts",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+> Example response:
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/blog/posts`
+
+`HEAD api/blog/posts`
+
+
+<!-- END_1f0602d1824b13075c6d208836bbde39 -->
+<!-- START_d64408d5fc1b4a4029901ad4033ed99b -->
+## Get post by id
+
+> Example request:
+
+```bash
+curl "http://laravel.pres/mobileapi/api/blog/posts/{post}" \
+-H "Accept: application/json"
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi/api/blog/posts/{post}",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+> Example response:
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/blog/posts/{post}`
+
+`HEAD api/blog/posts/{post}`
+
+
+<!-- END_d64408d5fc1b4a4029901ad4033ed99b -->
 #Carrier
 <!-- START_fe074919512d7e727bc186e77872521d -->
 ## Get Carrier by Zone location
@@ -2277,163 +2492,7 @@ $.ajax(settings).done(function (response) {
 > Example response:
 
 ```json
-{
-    "total": 1,
-    "per_page": 3,
-    "current_page": 1,
-    "last_page": 1,
-    "next_page_url": null,
-    "prev_page_url": null,
-    "from": 1,
-    "to": 1,
-    "data": [
-        {
-            "id_product": 2,
-            "id_supplier": 1,
-            "id_manufacturer": 8,
-            "id_category_default": 2,
-            "id_shop_default": 1,
-            "id_tax_rules_group": 0,
-            "on_sale": 1,
-            "online_only": 0,
-            "ean13": "",
-            "upc": "",
-            "ecotax": "0.000000",
-            "quantity": 4,
-            "minimal_quantity": 1,
-            "price": "150.000000",
-            "wholesale_price": "150.000000",
-            "unity": "",
-            "unit_price_ratio": "1.250000",
-            "additional_shipping_cost": "0.00",
-            "reference": "00102",
-            "supplier_reference": "",
-            "location": "",
-            "width": "0.000000",
-            "height": "0.000000",
-            "depth": "0.000000",
-            "weight": "0.000000",
-            "out_of_stock": 2,
-            "quantity_discount": 0,
-            "customizable": 0,
-            "uploadable_files": 0,
-            "text_fields": 0,
-            "active": 1,
-            "redirect_type": "404",
-            "id_product_redirected": 0,
-            "available_for_order": 1,
-            "available_date": "0000-00-00",
-            "condition": "new",
-            "show_price": 1,
-            "indexed": 1,
-            "visibility": "both",
-            "cache_is_pack": 0,
-            "cache_has_attachments": 0,
-            "is_virtual": 0,
-            "cache_default_attribute": 51,
-            "date_add": "2015-12-09 14:56:03",
-            "date_upd": "2017-02-08 00:00:00",
-            "advanced_stock_management": 0,
-            "pack_stock_type": 3,
-            "sale_nbr": 1,
-            "has_attribute": true,
-            "images": [
-                {
-                    "id_image": 8,
-                    "id_product": 2,
-                    "position": 2,
-                    "cover": null
-                },
-                {
-                    "id_image": 9,
-                    "id_product": 2,
-                    "position": 3,
-                    "cover": null
-                },
-                {
-                    "id_image": 10,
-                    "id_product": 2,
-                    "position": 4,
-                    "cover": null
-                },
-                {
-                    "id_image": 11,
-                    "id_product": 2,
-                    "position": 5,
-                    "cover": null
-                },
-                {
-                    "id_image": 12,
-                    "id_product": 2,
-                    "position": 6,
-                    "cover": null
-                },
-                {
-                    "id_image": 7,
-                    "id_product": 2,
-                    "position": 1,
-                    "cover": 1
-                }
-            ],
-            "descriptions": [
-                {
-                    "id_product": 2,
-                    "id_shop": 1,
-                    "id_lang": 6,
-                    "description": "<p><strong><span xml:lang=\"en-us\" lang=\"en-us\">The main reason<\/span><\/strong><span xml:lang=\"en-us\" lang=\"en-us\"> of our success is that our commodities are the unique combination of original design and numerous useful options. <strong>We can<\/strong> satisfy most whimsical clients because we have a largest choice among the competitive stores. <strong>Our phones are totally<\/strong> safe for your health because they have passed all tests without any failure. <em>So don’t waste your time and purchase<\/em> our products because our company cares about their clients. We often provide different promos and you can save some money in our store.<\/span><\/p>\n<p><span xml:lang=\"en-us\" lang=\"en-us\">Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.<\/span><\/p>\n<p><span xml:lang=\"en-us\" lang=\"en-us\">We are proud to offer you our hi-tech original goods. <em>The products of our store are the real bestsellers and we have a great number of faithful customers.<\/em> Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.<\/span><\/p>\n<p><strong><span xml:lang=\"en-us\" lang=\"en-us\">The main reason<\/span><\/strong><span xml:lang=\"en-us\" lang=\"en-us\"> of our success is that our commodities are the unique combination of original design and numerous useful options. <strong>We can<\/strong> satisfy most whimsical clients because we have a largest choice among the competitive stores. <strong>Our phones are totally<\/strong> safe for your health because they have passed all tests without any failure. <em>So don’t waste your time and purchase<\/em> our products because our company cares about their clients. We often provide different promos and you can save some money in our store<\/span><span xml:lang=\"en-us\" lang=\"en-us\">.<\/span><\/p>",
-                    "description_short": "<p><strong><span xml:lang=\"en-us\" lang=\"en-us\">The main reason<\/span><\/strong><span xml:lang=\"en-us\" lang=\"en-us\"> of our success is that our commodities are the unique combination of original design and numerous useful options. <strong>We can<\/strong> satisfy most whimsical clients because we have a largest choice among the competitive stores.<\/span><\/p>",
-                    "link_rewrite": "alcatel-one-touch-fire",
-                    "meta_description": "",
-                    "meta_keywords": "",
-                    "meta_title": "",
-                    "name": "Alcatel One Touch Fire",
-                    "available_now": "",
-                    "available_later": ""
-                }
-            ],
-            "manufacturer": null,
-            "sale": {
-                "id_product": 2,
-                "quantity": 4,
-                "sale_nbr": 1,
-                "date_upd": "2017-02-08"
-            },
-            "currency": [],
-            "specific_price": [
-                {
-                    "id_specific_price": 13,
-                    "id_currency": 0,
-                    "id_country": 0,
-                    "id_group": 0,
-                    "id_customer": 0,
-                    "id_product_attribute": 0,
-                    "price": "-1.000000",
-                    "from_quantity": 1,
-                    "reduction": "10.000000",
-                    "reduction_tax": 0,
-                    "reduction_type": "amount",
-                    "from": "0000-00-00 00:00:00",
-                    "to": "0000-00-00 00:00:00"
-                },
-                {
-                    "id_specific_price": 14,
-                    "id_currency": 0,
-                    "id_country": 0,
-                    "id_group": 0,
-                    "id_customer": 0,
-                    "id_product_attribute": 0,
-                    "price": "-1.000000",
-                    "from_quantity": 5,
-                    "reduction": "10.000000",
-                    "reduction_tax": 1,
-                    "reduction_type": "amount",
-                    "from": "0000-00-00 00:00:00",
-                    "to": "0000-00-00 00:00:00"
-                }
-            ]
-        }
-    ]
-}
+null
 ```
 
 ### HTTP Request
@@ -2917,7 +2976,7 @@ curl "http://laravel.pres/mobileapi/api/user/register" \
     -d "email"="njacobson@example.com" \
     -d "passwd"="vel" \
     -d "newsletter"="1" \
-    -d "birthday"="2008-04-30" \
+    -d "birthday"="2008-05-05" \
 
 ```
 
@@ -2935,7 +2994,7 @@ var settings = {
         "email": "njacobson@example.com",
         "passwd": "vel",
         "newsletter": true,
-        "birthday": "2008-04-30"
+        "birthday": "2008-05-05"
 },
     "headers": {
         "accept": "application/json"
@@ -2980,7 +3039,7 @@ curl "http://laravel.pres/mobileapi/api/user" \
     -d "email"="marquise77@example.net" \
     -d "passwd"="quo" \
     -d "newsletter"="1" \
-    -d "birthday"="2003-07-20" \
+    -d "birthday"="2003-07-24" \
 
 ```
 
@@ -2998,7 +3057,7 @@ var settings = {
         "email": "marquise77@example.net",
         "passwd": "quo",
         "newsletter": true,
-        "birthday": "2003-07-20"
+        "birthday": "2003-07-24"
 },
     "headers": {
         "accept": "application/json"

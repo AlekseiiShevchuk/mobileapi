@@ -111,12 +111,11 @@ class CartController extends Controller
      */
     public function redirectUrlOrder()
     {
-        return \Redirect::away('http://' . $_SERVER['HTTP_HOST'] . '/index.php?' .
-            http_build_query([
-                'controller' => 'auth',
-                'back' => 'order-opc'
-            ])
-        );
+        return 'http://' . $_SERVER['HTTP_HOST'] . '/index.php?' .
+        http_build_query([
+            'controller' => 'auth',
+            'back' => 'order-opc'
+        ]);
     }
 
 

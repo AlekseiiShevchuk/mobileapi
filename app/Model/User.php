@@ -54,6 +54,12 @@ class User extends Authenticatable
         'has_cart',
     ];
 
+    public function __construct(array $attributes =[])
+    {
+        $this->active = 1;
+        parent::__construct($attributes);
+    }
+
     public function validateForPassportPasswordGrant($password)
     {
         return (md5(self::_COOKIE_KEY_ . $password) == $this->passwd);
