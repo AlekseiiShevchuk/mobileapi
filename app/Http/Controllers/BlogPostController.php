@@ -9,6 +9,19 @@ use Illuminate\Http\Request;
  * Class PostsController
  * @package App\Http\Controllers
  * @resource Blog Post
+ *
+ * image:
+ * /modules/smartblog/images/{postID}{type}.jpg
+ *
+ * type not required
+ *
+ * '-home-default' -> 270x133
+ *
+ * '-home-small' -> 98x48
+ *
+ * '-single-default' -> 870x427
+ *
+ * without type is origin image
  */
 class BlogPostController extends Controller
 {

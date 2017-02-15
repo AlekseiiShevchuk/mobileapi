@@ -343,6 +343,19 @@ $.ajax(settings).done(function (response) {
 
 <!-- END_e5d3d7a19170fe1ef6901a6ddf8eaeae -->
 #Blog Category
+
+image:
+/modules/smartblog/images/category/{categoryID}{type}.jpg
+
+type not required
+
+&#039;-home-default&#039; -&gt; 65x65
+
+&#039;-home-small&#039; -&gt; 240x240
+
+&#039;-single-default&#039; -&gt; 800x800
+
+without type is origin image
 <!-- START_33a1f9a00c004612c7e741bea9de4fbc -->
 ## Root Menu Category
 
@@ -440,6 +453,19 @@ $.ajax(settings).done(function (response) {
 
 <!-- END_3d58eaacc0ea4d32635d97cece61a554 -->
 #Blog Post
+
+image:
+/modules/smartblog/images/{postID}{type}.jpg
+
+type not required
+
+&#039;-home-default&#039; -&gt; 270x133
+
+&#039;-home-small&#039; -&gt; 98x48
+
+&#039;-single-default&#039; -&gt; 870x427
+
+without type is origin image
 <!-- START_1a7850234fef6fbff9ce49c8d6e3c1d5 -->
 ## Get posts by Category  with limit(default: 5)
 

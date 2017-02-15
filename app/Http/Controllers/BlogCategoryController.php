@@ -15,6 +15,19 @@ use Illuminate\Http\Request;
  * Class BlogCategoryController
  * @package App\Http\Controllers
  * @resource Blog Category
+ *
+ * image:
+ * /modules/smartblog/images/category/{categoryID}{type}.jpg
+ *
+ * type not required
+ *
+ * '-home-default' -> 65x65
+ *
+ * '-home-small' -> 240x240
+ *
+ * '-single-default' -> 800x800
+ *
+ * without type is origin image
  */
 class BlogCategoryController extends Controller
 {

@@ -446,6 +446,13 @@ $.ajax(settings).done(function (response) {
 <p><code>DELETE api/addresses/{address}</code></p>
 <!-- END_e5d3d7a19170fe1ef6901a6ddf8eaeae -->
 <h1>Blog Category</h1>
+<p>image:
+/modules/smartblog/images/category/{categoryID}{type}.jpg</p>
+<p>type not required</p>
+<p>&#039;-home-default&#039; -&gt; 65x65</p>
+<p>&#039;-home-small&#039; -&gt; 240x240</p>
+<p>&#039;-single-default&#039; -&gt; 800x800</p>
+<p>without type is origin image</p>
 <!-- START_33a1f9a00c004612c7e741bea9de4fbc -->
 <h2>Root Menu Category</h2>
 <blockquote>
@@ -521,6 +528,13 @@ $.ajax(settings).done(function (response) {
 <p><code>HEAD api/blog/categories/{category}</code></p>
 <!-- END_3d58eaacc0ea4d32635d97cece61a554 -->
 <h1>Blog Post</h1>
+<p>image:
+/modules/smartblog/images/{postID}{type}.jpg</p>
+<p>type not required</p>
+<p>&#039;-home-default&#039; -&gt; 270x133</p>
+<p>&#039;-home-small&#039; -&gt; 98x48</p>
+<p>&#039;-single-default&#039; -&gt; 870x427</p>
+<p>without type is origin image</p>
 <!-- START_1a7850234fef6fbff9ce49c8d6e3c1d5 -->
 <h2>Get posts by Category  with limit(default: 5)</h2>
 <blockquote>
