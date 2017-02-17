@@ -8,7 +8,6 @@ use App\Model\Product\ProductCategory;
 use App\Model\Product\ProductLangDescription;
 use App\Model\Product\ProductSale;
 use App\Model\Product\ProductSpecificPrice;
-use Illuminate\Database\Query\Builder;
 
 class Product extends \Eloquent
 {
@@ -16,14 +15,6 @@ class Product extends \Eloquent
     protected $primaryKey = 'id_product';
     const CREATED_AT = 'date_add';
     const UPDATED_AT = 'date_upd';
-
-    protected $hidden = [
-        'attribute'
-    ];
-
-    protected $appends = [
-        'has_attribute',
-    ];
 
     public function __construct(array $attributes = [])
     {
@@ -38,7 +29,8 @@ class Product extends \Eloquent
             'currency' => function($query){
                 $query->where('active','=',1);
             },
-            'specific_price'
+            'specific_price',
+            'attribute'
         ];
     }
 
@@ -80,10 +72,6 @@ class Product extends \Eloquent
         return $this->hasMany(ProductAttribute::class,'id_product');
     }
 
-    public function getHasAttributeAttribute()
-    {
-        return $this->attribute->isNotEmpty();
-    }
     /**
      * Scope a query.
      *

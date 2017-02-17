@@ -13,6 +13,7 @@
 ////////// Products
 Route::get('/products', 'ProductsController@getAllProducts');
 Route::get('/products/{product}', 'ProductsController@getById')->where('product', '[0-9]+');
+Route::get('/products/{product}/attributes', 'ProductsController@getAttributeById')->where('product', '[0-9]+');
 Route::get('/categories/{categoryId}/products', 'ProductsController@getProductsByCategory')->where('categoryId', '[0-9]+');
 Route::get('/products/new', 'ProductsController@getNewProducts');
 Route::get('/products/top-sales', 'ProductsController@getTopSalesProducts');

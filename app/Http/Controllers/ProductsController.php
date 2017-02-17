@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Attribute\AttributeGroup;
 use App\Model\Product;
 use Illuminate\Http\Request;
 
@@ -51,6 +52,15 @@ class ProductsController extends Controller
     public function getById(Product $product)
     {
         return $product;
+    }
+
+    /**
+     * Get product attributes
+     * @param Product $product
+     * @return mixed
+     */
+    public function getAttributeById(Product $product){
+        return [ 'data'=>AttributeGroup::AttributebyProduct($product->id_product)->get()];
     }
 
     /**

@@ -10,9 +10,17 @@ namespace App\Model\Product;
 
 class ProductAttribute extends \Eloquent
 {
-    protected $primaryKey = 'id_product_attribute';
-    protected $table = 'clk_1d21ac51df_product_attribute';
     public $timestamps = false;
 
+    protected $primaryKey = 'id_product_attribute';
+    protected $table = 'clk_1d21ac51df_product_attribute';
+    protected $with = [
+        'combination',
+    ];
+
+    public function combination()
+    {
+        return $this->hasMany(ProductAttributeCombination::class,$this->primaryKey);
+    }
 
 }

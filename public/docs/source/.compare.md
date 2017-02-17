@@ -1265,7 +1265,7 @@ $.ajax(settings).done(function (response) {
             "id_category_default": 2,
             "id_shop_default": 1,
             "id_tax_rules_group": 1,
-            "on_sale": 1,
+            "on_sale": 0,
             "online_only": 0,
             "ean13": "",
             "upc": "",
@@ -1306,7 +1306,6 @@ $.ajax(settings).done(function (response) {
             "date_upd": "2015-12-09 14:56:02",
             "advanced_stock_management": 0,
             "pack_stock_type": 3,
-            "has_attribute": true,
             "images": [
                 {
                     "id_image": 1,
@@ -1395,6 +1394,1443 @@ $.ajax(settings).done(function (response) {
                     "reduction_type": "percentage",
                     "from": "0000-00-00 00:00:00",
                     "to": "0000-00-00 00:00:00"
+                },
+                {
+                    "id_specific_price": 14,
+                    "id_currency": 0,
+                    "id_country": 0,
+                    "id_group": 0,
+                    "id_customer": 0,
+                    "id_product_attribute": 0,
+                    "price": "-1.000000",
+                    "from_quantity": 5,
+                    "reduction": "10.000000",
+                    "reduction_tax": 1,
+                    "reduction_type": "amount",
+                    "from": "0000-00-00 00:00:00",
+                    "to": "0000-00-00 00:00:00"
+                }
+            ],
+            "attribute": [
+                {
+                    "id_product_attribute": 1,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": 1,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 2,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 3,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 4,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 5,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 6,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 7,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 8,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 9,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 10,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 11,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 12,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 13,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 14,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 15,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 16,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 17,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 18,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 19,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 20,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 21,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 22,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 23,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 24,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 25,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 26,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 27,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 28,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 29,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 30,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 31,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 32,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 33,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 34,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 35,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 36,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 37,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 38,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 39,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 40,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 41,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 42,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 43,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 44,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 45,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 46,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 47,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 48,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 49,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 50,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
                 }
             ]
         },
@@ -1405,7 +2841,7 @@ $.ajax(settings).done(function (response) {
             "id_category_default": 2,
             "id_shop_default": 1,
             "id_tax_rules_group": 0,
-            "on_sale": 1,
+            "on_sale": 0,
             "online_only": 0,
             "ean13": "",
             "upc": "",
@@ -1446,7 +2882,6 @@ $.ajax(settings).done(function (response) {
             "date_upd": "2017-01-30 11:31:53",
             "advanced_stock_management": 0,
             "pack_stock_type": 3,
-            "has_attribute": true,
             "images": [
                 {
                     "id_image": 7,
@@ -1524,21 +2959,1712 @@ $.ajax(settings).done(function (response) {
                     "reduction_type": "amount",
                     "from": "0000-00-00 00:00:00",
                     "to": "0000-00-00 00:00:00"
+                }
+            ],
+            "attribute": [
+                {
+                    "id_product_attribute": 51,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": 1,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
                 },
                 {
-                    "id_specific_price": 14,
-                    "id_currency": 0,
-                    "id_country": 0,
-                    "id_group": 0,
-                    "id_customer": 0,
-                    "id_product_attribute": 0,
-                    "price": "-1.000000",
-                    "from_quantity": 5,
-                    "reduction": "10.000000",
-                    "reduction_tax": 1,
-                    "reduction_type": "amount",
-                    "from": "0000-00-00 00:00:00",
-                    "to": "0000-00-00 00:00:00"
+                    "id_product_attribute": 52,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 53,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 54,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 55,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 56,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 57,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 58,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 59,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 60,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 61,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 62,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 63,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 64,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 65,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 66,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 67,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 68,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 69,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 70,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 71,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 72,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 73,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 74,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 75,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 76,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 77,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 78,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 79,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 80,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 81,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 82,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 83,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 84,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 85,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 86,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 87,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 88,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 89,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 90,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 91,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 92,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 93,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 94,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 95,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 96,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 97,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 98,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 99,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 100,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 101,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 102,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 103,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 104,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 105,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 106,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 107,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 108,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 109,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 110,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
                 }
             ]
         },
@@ -1549,7 +4675,7 @@ $.ajax(settings).done(function (response) {
             "id_category_default": 3,
             "id_shop_default": 1,
             "id_tax_rules_group": 1,
-            "on_sale": 1,
+            "on_sale": 0,
             "online_only": 0,
             "ean13": "",
             "upc": "",
@@ -1590,7 +4716,6 @@ $.ajax(settings).done(function (response) {
             "date_upd": "2017-01-30 11:21:11",
             "advanced_stock_management": 0,
             "pack_stock_type": 3,
-            "has_attribute": true,
             "images": [
                 {
                     "id_image": 13,
@@ -1664,6 +4789,1364 @@ $.ajax(settings).done(function (response) {
                     "from": "0000-00-00 00:00:00",
                     "to": "0000-00-00 00:00:00"
                 }
+            ],
+            "attribute": [
+                {
+                    "id_product_attribute": 111,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": 1,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 112,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 113,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 114,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 115,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 116,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 117,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 118,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 119,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 120,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 121,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 122,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 123,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 124,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 125,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 126,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 127,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 128,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 129,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 130,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 131,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 132,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 133,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 134,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 135,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 136,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 137,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 138,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 139,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 140,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 141,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 142,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 143,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 144,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 145,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 146,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 147,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 148,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 149,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 150,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 151,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 152,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 153,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 154,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 155,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 156,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 157,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 158,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -1673,7 +6156,7 @@ $.ajax(settings).done(function (response) {
             "id_category_default": 2,
             "id_shop_default": 1,
             "id_tax_rules_group": 1,
-            "on_sale": 1,
+            "on_sale": 0,
             "online_only": 0,
             "ean13": "",
             "upc": "",
@@ -1714,7 +6197,6 @@ $.ajax(settings).done(function (response) {
             "date_upd": "2017-01-30 11:21:11",
             "advanced_stock_management": 0,
             "pack_stock_type": 3,
-            "has_attribute": true,
             "images": [
                 {
                     "id_image": 19,
@@ -1788,6 +6270,1138 @@ $.ajax(settings).done(function (response) {
                     "from": "0000-00-00 00:00:00",
                     "to": "0000-00-00 00:00:00"
                 }
+            ],
+            "attribute": [
+                {
+                    "id_product_attribute": 159,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": 1,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 160,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 161,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 162,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 163,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 164,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 165,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 166,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 167,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 168,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 169,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 170,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 171,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 172,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 173,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 174,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 175,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 176,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 177,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 178,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 179,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 180,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 181,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 182,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 183,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 184,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 185,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 186,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 187,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 188,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 189,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 190,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 191,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 192,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 193,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 194,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 195,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 196,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 197,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 198,
+                    "id_product": 4,
+                    "reference": "00104",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -1796,8 +7410,8 @@ $.ajax(settings).done(function (response) {
             "id_manufacturer": 9,
             "id_category_default": 2,
             "id_shop_default": 1,
-            "id_tax_rules_group": 1,
-            "on_sale": 1,
+            "id_tax_rules_group": 0,
+            "on_sale": 0,
             "online_only": 0,
             "ean13": "",
             "upc": "",
@@ -1822,7 +7436,7 @@ $.ajax(settings).done(function (response) {
             "uploadable_files": 0,
             "text_fields": 0,
             "active": 1,
-            "redirect_type": "",
+            "redirect_type": "404",
             "id_product_redirected": 0,
             "available_for_order": 1,
             "available_date": "0000-00-00",
@@ -1835,10 +7449,9 @@ $.ajax(settings).done(function (response) {
             "is_virtual": 0,
             "cache_default_attribute": 199,
             "date_add": "2015-12-09 14:56:03",
-            "date_upd": "2017-01-30 11:21:11",
+            "date_upd": "2017-02-15 18:18:37",
             "advanced_stock_management": 0,
             "pack_stock_type": 3,
-            "has_attribute": true,
             "images": [
                 {
                     "id_image": 25,
@@ -1882,8 +7495,8 @@ $.ajax(settings).done(function (response) {
                     "id_product": 5,
                     "id_shop": 1,
                     "id_lang": 6,
-                    "description": "<p><strong><span lang=\"en-us\" xml:lang=\"en-us\">The main reason<\/span><\/strong><span lang=\"en-us\" xml:lang=\"en-us\"> of our success is that our commodities are the unique combination of original design and numerous useful options. <strong>We can<\/strong> satisfy most whimsical clients because we have a largest choice among the competitive stores. <strong>Our phones are totally<\/strong> safe for your health because they have passed all tests without any failure. <em>So don’t waste your time and purchase<\/em> our products because our company cares about their clients. We often provide different promos and you can save some money in our store.<\/span><\/p>\r\n<p><span lang=\"en-us\" xml:lang=\"en-us\">Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.<\/span><\/p>\r\n<p><span lang=\"en-us\" xml:lang=\"en-us\">We are proud to offer you our hi-tech original goods. <em>The products of our store are the real bestsellers and we have a great number of faithful customers.<\/em> Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.<\/span><\/p>\r\n<p><strong><span lang=\"en-us\" xml:lang=\"en-us\">The main reason<\/span><\/strong><span lang=\"en-us\" xml:lang=\"en-us\"> of our success is that our commodities are the unique combination of original design and numerous useful options. <strong>We can<\/strong> satisfy most whimsical clients because we have a largest choice among the competitive stores. <strong>Our phones are totally<\/strong> safe for your health because they have passed all tests without any failure. <em>So don’t waste your time and purchase<\/em> our products because our company cares about their clients. We often provide different promos and you can save some money in our store<\/span><span lang=\"en-us\" xml:lang=\"en-us\">.<\/span><\/p>",
-                    "description_short": "<p><strong><span lang=\"en-us\" xml:lang=\"en-us\">The main reason<\/span><\/strong><span lang=\"en-us\" xml:lang=\"en-us\"> of our success is that our commodities are the unique combination of original design and numerous useful options. <strong>We can<\/strong> satisfy most whimsical clients because we have a largest choice among the competitive stores.<\/span><\/p>",
+                    "description": "<p><strong><span xml:lang=\"en-us\" lang=\"en-us\">The main reason<\/span><\/strong><span xml:lang=\"en-us\" lang=\"en-us\"> of our success is that our commodities are the unique combination of original design and numerous useful options. <strong>We can<\/strong> satisfy most whimsical clients because we have a largest choice among the competitive stores. <strong>Our phones are totally<\/strong> safe for your health because they have passed all tests without any failure. <em>So don’t waste your time and purchase<\/em> our products because our company cares about their clients. We often provide different promos and you can save some money in our store.<\/span><\/p>\n<p><span xml:lang=\"en-us\" lang=\"en-us\">Our products have some advantages such as durability and reliability. You know nowadays we sell not just hi-tech products; we sell a part of a style, culture. It is a real mainstream because this good is very widespread, indispensable and it has a high sales rate. We always stay in touch with the latest fashion tendencies and hi-tech achievements. That is why you can buy stylish and very functional products in our store. We try to provide only positive and effective solutions.<\/span><\/p>\n<p><span xml:lang=\"en-us\" lang=\"en-us\">We are proud to offer you our hi-tech original goods. <em>The products of our store are the real bestsellers and we have a great number of faithful customers.<\/em> Their testimonials prove that the reputation of our company is simply perfect. We observe the policy of providing only branded commodities. This fact confirms that we sell only high quality goods at a fair price.<\/span><\/p>\n<p><strong><span xml:lang=\"en-us\" lang=\"en-us\">The main reason<\/span><\/strong><span xml:lang=\"en-us\" lang=\"en-us\"> of our success is that our commodities are the unique combination of original design and numerous useful options. <strong>We can<\/strong> satisfy most whimsical clients because we have a largest choice among the competitive stores. <strong>Our phones are totally<\/strong> safe for your health because they have passed all tests without any failure. <em>So don’t waste your time and purchase<\/em> our products because our company cares about their clients. We often provide different promos and you can save some money in our store<\/span><span xml:lang=\"en-us\" lang=\"en-us\">.<\/span><\/p>",
+                    "description_short": "<p><strong><span xml:lang=\"en-us\" lang=\"en-us\">The main reason<\/span><\/strong><span xml:lang=\"en-us\" lang=\"en-us\"> of our success is that our commodities are the unique combination of original design and numerous useful options. <strong>We can<\/strong> satisfy most whimsical clients because we have a largest choice among the competitive stores.<\/span><\/p>",
                     "link_rewrite": "asus-zenfone-6-a601cg",
                     "meta_description": "",
                     "meta_keywords": "",
@@ -1896,7 +7509,1429 @@ $.ajax(settings).done(function (response) {
             "manufacturer": null,
             "sale": null,
             "currency": [],
-            "specific_price": []
+            "specific_price": [],
+            "attribute": [
+                {
+                    "id_product_attribute": 199,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": 1,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 200,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 201,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 202,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 203,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 204,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 205,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 206,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 207,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 208,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 209,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 210,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 211,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 212,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 213,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 214,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 215,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 216,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 217,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 218,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 219,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 220,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 221,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 222,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 223,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 224,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 225,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 226,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 227,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 228,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 229,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 230,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 231,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 232,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 233,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 234,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 235,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 236,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 237,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 238,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 239,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 240,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 241,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 242,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 243,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 244,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 245,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 246,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 247,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 248,
+                    "id_product": 5,
+                    "reference": "00105",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
@@ -1945,7 +8980,7 @@ $.ajax(settings).done(function (response) {
     "id_category_default": 2,
     "id_shop_default": 1,
     "id_tax_rules_group": 1,
-    "on_sale": 1,
+    "on_sale": 0,
     "online_only": 0,
     "ean13": "",
     "upc": "",
@@ -1986,7 +9021,6 @@ $.ajax(settings).done(function (response) {
     "date_upd": "2015-12-09 14:56:02",
     "advanced_stock_management": 0,
     "pack_stock_type": 3,
-    "has_attribute": true,
     "images": [
         {
             "id_image": 2,
@@ -2075,6 +9109,1443 @@ $.ajax(settings).done(function (response) {
             "reduction_type": "percentage",
             "from": "0000-00-00 00:00:00",
             "to": "0000-00-00 00:00:00"
+        },
+        {
+            "id_specific_price": 14,
+            "id_currency": 0,
+            "id_country": 0,
+            "id_group": 0,
+            "id_customer": 0,
+            "id_product_attribute": 0,
+            "price": "-1.000000",
+            "from_quantity": 5,
+            "reduction": "10.000000",
+            "reduction_tax": 1,
+            "reduction_type": "amount",
+            "from": "0000-00-00 00:00:00",
+            "to": "0000-00-00 00:00:00"
+        }
+    ],
+    "attribute": [
+        {
+            "id_product_attribute": 2,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 33
+                },
+                {
+                    "id_attribute": 38
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 3,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 33
+                },
+                {
+                    "id_attribute": 39
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 4,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 33
+                },
+                {
+                    "id_attribute": 39
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 5,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 33
+                },
+                {
+                    "id_attribute": 40
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 6,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 33
+                },
+                {
+                    "id_attribute": 40
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 7,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 33
+                },
+                {
+                    "id_attribute": 41
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 8,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 33
+                },
+                {
+                    "id_attribute": 41
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 9,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 33
+                },
+                {
+                    "id_attribute": 42
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 10,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 33
+                },
+                {
+                    "id_attribute": 42
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 11,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 34
+                },
+                {
+                    "id_attribute": 38
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 12,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 34
+                },
+                {
+                    "id_attribute": 38
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 13,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 34
+                },
+                {
+                    "id_attribute": 39
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 14,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 34
+                },
+                {
+                    "id_attribute": 39
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 15,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 34
+                },
+                {
+                    "id_attribute": 40
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 16,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 34
+                },
+                {
+                    "id_attribute": 40
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 17,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 34
+                },
+                {
+                    "id_attribute": 41
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 18,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 34
+                },
+                {
+                    "id_attribute": 41
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 19,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 34
+                },
+                {
+                    "id_attribute": 42
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 20,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 34
+                },
+                {
+                    "id_attribute": 42
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 21,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 35
+                },
+                {
+                    "id_attribute": 38
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 22,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 35
+                },
+                {
+                    "id_attribute": 38
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 23,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 35
+                },
+                {
+                    "id_attribute": 39
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 24,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 35
+                },
+                {
+                    "id_attribute": 39
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 25,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 35
+                },
+                {
+                    "id_attribute": 40
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 26,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 35
+                },
+                {
+                    "id_attribute": 40
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 27,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 35
+                },
+                {
+                    "id_attribute": 41
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 28,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 35
+                },
+                {
+                    "id_attribute": 41
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 29,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 35
+                },
+                {
+                    "id_attribute": 42
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 30,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 35
+                },
+                {
+                    "id_attribute": 42
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 31,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 38
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 32,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 38
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 33,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 39
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 34,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 39
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 35,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 40
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 36,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 40
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 37,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 41
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 38,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 41
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 39,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 42
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 40,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 42
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 41,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 37
+                },
+                {
+                    "id_attribute": 38
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 42,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 37
+                },
+                {
+                    "id_attribute": 38
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 43,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 37
+                },
+                {
+                    "id_attribute": 39
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 44,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 37
+                },
+                {
+                    "id_attribute": 39
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 45,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 37
+                },
+                {
+                    "id_attribute": 40
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 46,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 37
+                },
+                {
+                    "id_attribute": 40
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 47,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 37
+                },
+                {
+                    "id_attribute": 41
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 48,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 37
+                },
+                {
+                    "id_attribute": 41
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 49,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 37
+                },
+                {
+                    "id_attribute": 42
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 50,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": null,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 11
+                },
+                {
+                    "id_attribute": 37
+                },
+                {
+                    "id_attribute": 42
+                }
+            ]
+        },
+        {
+            "id_product_attribute": 1,
+            "id_product": 1,
+            "reference": "00101",
+            "supplier_reference": "",
+            "location": "",
+            "ean13": "",
+            "upc": "",
+            "wholesale_price": "0.000000",
+            "price": "0.000000",
+            "ecotax": "0.000000",
+            "quantity": 100,
+            "weight": "0.000000",
+            "unit_price_impact": "0.000000",
+            "default_on": 1,
+            "minimal_quantity": 1,
+            "available_date": "0000-00-00",
+            "combination": [
+                {
+                    "id_attribute": 5
+                },
+                {
+                    "id_attribute": 33
+                },
+                {
+                    "id_attribute": 38
+                }
+            ]
         }
     ]
 }
@@ -2087,6 +10558,45 @@ $.ajax(settings).done(function (response) {
 
 
 <!-- END_963ec11fd78da94f0900b0c6baf959a3 -->
+<!-- START_427c54c821bf8c9eb54276f32008ea6a -->
+## Get product attributes
+
+> Example request:
+
+```bash
+curl "http://laravel.pres/mobileapi/api/products/{product}/attributes" \
+-H "Accept: application/json"
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://laravel.pres/mobileapi/api/products/{product}/attributes",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+> Example response:
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/products/{product}/attributes`
+
+`HEAD api/products/{product}/attributes`
+
+
+<!-- END_427c54c821bf8c9eb54276f32008ea6a -->
 <!-- START_3453704059d258c15690ff3a47092546 -->
 ## Get products by Category  with limit(default: 5)
 
@@ -2223,7 +10733,6 @@ $.ajax(settings).done(function (response) {
             "date_upd": "2017-01-30 12:11:25",
             "advanced_stock_management": 0,
             "pack_stock_type": 3,
-            "has_attribute": true,
             "images": [],
             "descriptions": [
                 {
@@ -2244,7 +10753,35 @@ $.ajax(settings).done(function (response) {
             "manufacturer": null,
             "sale": null,
             "currency": [],
-            "specific_price": []
+            "specific_price": [],
+            "attribute": [
+                {
+                    "id_product_attribute": 853,
+                    "id_product": 20,
+                    "reference": "",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "10.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 0,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": 1,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                }
+            ]
         },
         {
             "id_product": 19,
@@ -2291,10 +10828,9 @@ $.ajax(settings).done(function (response) {
             "is_virtual": 0,
             "cache_default_attribute": 821,
             "date_add": "2015-12-09 14:56:04",
-            "date_upd": "2017-01-30 11:21:11",
+            "date_upd": "2017-02-15 18:06:30",
             "advanced_stock_management": 0,
             "pack_stock_type": 3,
-            "has_attribute": true,
             "images": [
                 {
                     "id_image": 110,
@@ -2352,7 +10888,937 @@ $.ajax(settings).done(function (response) {
             "manufacturer": null,
             "sale": null,
             "currency": [],
-            "specific_price": []
+            "specific_price": [],
+            "attribute": [
+                {
+                    "id_product_attribute": 822,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 823,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 824,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 825,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 826,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 827,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 828,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 829,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 830,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 831,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 832,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 833,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 834,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 835,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 836,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 837,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 838,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 839,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 840,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 841,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 842,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 843,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 844,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 845,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 846,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 847,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 848,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 849,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 850,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 851,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 852,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 821,
+                    "id_product": 19,
+                    "reference": "00119",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": 1,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                }
+            ]
         },
         {
             "id_product": 18,
@@ -2399,10 +11865,9 @@ $.ajax(settings).done(function (response) {
             "is_virtual": 0,
             "cache_default_attribute": 781,
             "date_add": "2015-12-09 14:56:04",
-            "date_upd": "2017-01-30 11:21:11",
+            "date_upd": "2017-02-15 18:06:30",
             "advanced_stock_management": 0,
             "pack_stock_type": 3,
-            "has_attribute": true,
             "images": [
                 {
                     "id_image": 104,
@@ -2475,6 +11940,1138 @@ $.ajax(settings).done(function (response) {
                     "reduction_type": "percentage",
                     "from": "0000-00-00 00:00:00",
                     "to": "0000-00-00 00:00:00"
+                }
+            ],
+            "attribute": [
+                {
+                    "id_product_attribute": 782,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 783,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 784,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 785,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 786,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 787,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 788,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 789,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 790,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 791,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 792,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 793,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 794,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 795,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 796,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 797,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 798,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 799,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 800,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 801,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 802,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 803,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 804,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 805,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 806,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 807,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 808,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 809,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 810,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 811,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 812,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 813,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 814,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 815,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 816,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 817,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 818,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 819,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 820,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 781,
+                    "id_product": 18,
+                    "reference": "00118",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": 1,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 7
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
                 }
             ]
         }
@@ -2558,7 +13155,7 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "total": 8,
+    "total": 7,
     "per_page": 3,
     "current_page": 1,
     "last_page": 3,
@@ -2574,7 +13171,7 @@ $.ajax(settings).done(function (response) {
             "id_category_default": 2,
             "id_shop_default": 1,
             "id_tax_rules_group": 1,
-            "on_sale": 1,
+            "on_sale": 0,
             "online_only": 0,
             "ean13": "",
             "upc": "",
@@ -2615,7 +13212,6 @@ $.ajax(settings).done(function (response) {
             "date_upd": "2015-12-09 14:56:02",
             "advanced_stock_management": 0,
             "pack_stock_type": 3,
-            "has_attribute": true,
             "images": [
                 {
                     "id_image": 2,
@@ -2704,6 +13300,1443 @@ $.ajax(settings).done(function (response) {
                     "reduction_type": "percentage",
                     "from": "0000-00-00 00:00:00",
                     "to": "0000-00-00 00:00:00"
+                },
+                {
+                    "id_specific_price": 14,
+                    "id_currency": 0,
+                    "id_country": 0,
+                    "id_group": 0,
+                    "id_customer": 0,
+                    "id_product_attribute": 0,
+                    "price": "-1.000000",
+                    "from_quantity": 5,
+                    "reduction": "10.000000",
+                    "reduction_tax": 1,
+                    "reduction_type": "amount",
+                    "from": "0000-00-00 00:00:00",
+                    "to": "0000-00-00 00:00:00"
+                }
+            ],
+            "attribute": [
+                {
+                    "id_product_attribute": 1,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": 1,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 2,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 3,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 4,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 5,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 6,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 7,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 8,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 9,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 10,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 33
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 11,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 12,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 13,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 14,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 15,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 16,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 17,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 18,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 19,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 20,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 34
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 21,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 22,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 23,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 24,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 25,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 26,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 27,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 28,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 29,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 30,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 35
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 31,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 32,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 33,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 34,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 35,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 36,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 37,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 38,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 39,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 40,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 41,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 42,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 38
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 43,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 44,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 39
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 45,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 46,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 40
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 47,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 48,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 41
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 49,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 5
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 50,
+                    "id_product": 1,
+                    "reference": "00101",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 11
+                        },
+                        {
+                            "id_attribute": 37
+                        },
+                        {
+                            "id_attribute": 42
+                        }
+                    ]
                 }
             ]
         },
@@ -2714,7 +14747,7 @@ $.ajax(settings).done(function (response) {
             "id_category_default": 2,
             "id_shop_default": 1,
             "id_tax_rules_group": 0,
-            "on_sale": 1,
+            "on_sale": 0,
             "online_only": 0,
             "ean13": "",
             "upc": "",
@@ -2755,7 +14788,6 @@ $.ajax(settings).done(function (response) {
             "date_upd": "2017-01-30 11:31:53",
             "advanced_stock_management": 0,
             "pack_stock_type": 3,
-            "has_attribute": true,
             "images": [
                 {
                     "id_image": 8,
@@ -2833,21 +14865,1712 @@ $.ajax(settings).done(function (response) {
                     "reduction_type": "amount",
                     "from": "0000-00-00 00:00:00",
                     "to": "0000-00-00 00:00:00"
+                }
+            ],
+            "attribute": [
+                {
+                    "id_product_attribute": 51,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": 1,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
                 },
                 {
-                    "id_specific_price": 14,
-                    "id_currency": 0,
-                    "id_country": 0,
-                    "id_group": 0,
-                    "id_customer": 0,
-                    "id_product_attribute": 0,
-                    "price": "-1.000000",
-                    "from_quantity": 5,
-                    "reduction": "10.000000",
-                    "reduction_tax": 1,
-                    "reduction_type": "amount",
-                    "from": "0000-00-00 00:00:00",
-                    "to": "0000-00-00 00:00:00"
+                    "id_product_attribute": 52,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 53,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 54,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 55,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 56,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 57,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 58,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 59,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 60,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 61,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 62,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 33
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 63,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 64,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 65,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 66,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 67,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 68,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 69,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 70,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 71,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 72,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 73,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 74,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 34
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 75,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 76,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 77,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 78,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 79,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 80,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 81,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 82,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 83,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 84,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 85,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 86,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 35
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 87,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 88,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 89,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 90,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 91,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 92,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 93,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 94,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 95,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 96,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 97,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 98,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 99,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 100,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 101,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 29
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 102,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 103,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 104,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 30
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 105,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 106,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 107,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 31
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 108,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 8
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 109,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 110,
+                    "id_product": 2,
+                    "reference": "00102",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 32
+                        },
+                        {
+                            "id_attribute": 37
+                        }
+                    ]
                 }
             ]
         },
@@ -2858,7 +16581,7 @@ $.ajax(settings).done(function (response) {
             "id_category_default": 3,
             "id_shop_default": 1,
             "id_tax_rules_group": 1,
-            "on_sale": 1,
+            "on_sale": 0,
             "online_only": 0,
             "ean13": "",
             "upc": "",
@@ -2899,7 +16622,6 @@ $.ajax(settings).done(function (response) {
             "date_upd": "2017-01-30 11:21:11",
             "advanced_stock_management": 0,
             "pack_stock_type": 3,
-            "has_attribute": true,
             "images": [
                 {
                     "id_image": 14,
@@ -2973,6 +16695,1364 @@ $.ajax(settings).done(function (response) {
                     "from": "0000-00-00 00:00:00",
                     "to": "0000-00-00 00:00:00"
                 }
+            ],
+            "attribute": [
+                {
+                    "id_product_attribute": 111,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": 1,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 112,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 113,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 114,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 115,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 116,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 117,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 118,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 119,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 120,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 121,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 122,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 25
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 123,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 124,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 125,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 126,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 127,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 128,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 129,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 130,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 131,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 132,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 133,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 134,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 135,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 136,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 137,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 138,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 139,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 140,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 141,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 142,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 143,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 144,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 145,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 146,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 27
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 147,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 148,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 149,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 29
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 150,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 151,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 152,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 30
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 153,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 154,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 155,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 31
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 156,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 10
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 157,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 14
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                },
+                {
+                    "id_product_attribute": 158,
+                    "id_product": 3,
+                    "reference": "00103",
+                    "supplier_reference": "",
+                    "location": "",
+                    "ean13": "",
+                    "upc": "",
+                    "wholesale_price": "0.000000",
+                    "price": "0.000000",
+                    "ecotax": "0.000000",
+                    "quantity": 100,
+                    "weight": "0.000000",
+                    "unit_price_impact": "0.000000",
+                    "default_on": null,
+                    "minimal_quantity": 1,
+                    "available_date": "0000-00-00",
+                    "combination": [
+                        {
+                            "id_attribute": 15
+                        },
+                        {
+                            "id_attribute": 28
+                        },
+                        {
+                            "id_attribute": 32
+                        }
+                    ]
+                }
             ]
         }
     ]
@@ -3002,7 +18082,7 @@ curl "http://laravel.pres/mobileapi/api/user/register" \
     -d "email"="njacobson@example.com" \
     -d "passwd"="vel" \
     -d "newsletter"="1" \
-    -d "birthday"="2008-05-05" \
+    -d "birthday"="2008-05-06" \
 
 ```
 
@@ -3020,7 +18100,7 @@ var settings = {
         "email": "njacobson@example.com",
         "passwd": "vel",
         "newsletter": true,
-        "birthday": "2008-05-05"
+        "birthday": "2008-05-06"
 },
     "headers": {
         "accept": "application/json"
@@ -3065,7 +18145,7 @@ curl "http://laravel.pres/mobileapi/api/user" \
     -d "email"="marquise77@example.net" \
     -d "passwd"="quo" \
     -d "newsletter"="1" \
-    -d "birthday"="2003-07-24" \
+    -d "birthday"="2003-07-25" \
 
 ```
 
@@ -3083,7 +18163,7 @@ var settings = {
         "email": "marquise77@example.net",
         "passwd": "quo",
         "newsletter": true,
-        "birthday": "2003-07-24"
+        "birthday": "2003-07-25"
 },
     "headers": {
         "accept": "application/json"
@@ -3143,63 +18223,7 @@ $.ajax(settings).done(function (response) {
 > Example response:
 
 ```json
-[
-    {
-        "id_address": 7,
-        "id_country": 21,
-        "id_state": 2,
-        "id_customer": 4,
-        "id_manufacturer": 0,
-        "id_supplier": 0,
-        "id_warehouse": 0,
-        "alias": "Min adresse",
-        "company": "",
-        "lastname": "Sha",
-        "firstname": "Igor",
-        "address1": "фывйца",
-        "address2": "",
-        "postcode": "23123",
-        "city": "фыфыв",
-        "other": "",
-        "phone": "",
-        "phone_mobile": "12312312",
-        "vat_number": "",
-        "dni": "",
-        "date_add": "2017-01-04 11:39:42",
-        "date_upd": "2017-01-04 11:39:42",
-        "active": 1,
-        "deleted": 0,
-        "country": {
-            "id_country": 21,
-            "id_zone": 2,
-            "id_currency": 0,
-            "iso_code": "US",
-            "call_prefix": 1,
-            "active": 0,
-            "contains_states": 1,
-            "need_identification_number": 0,
-            "need_zip_code": 1,
-            "zip_code_format": "NNNNN",
-            "display_tax_label": 0,
-            "descriptions": [
-                {
-                    "id_country": 21,
-                    "id_lang": 6,
-                    "name": "United States"
-                }
-            ]
-        },
-        "state": {
-            "id_state": 2,
-            "id_country": 21,
-            "id_zone": 2,
-            "name": "Alaska",
-            "iso_code": "AK",
-            "tax_behavior": 0,
-            "active": 1
-        }
-    }
-]
+null
 ```
 
 ### HTTP Request
